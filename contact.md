@@ -14,7 +14,7 @@ nav_section: kontakt
       {% assign method_order = "whatsapp,phone,email" | split: "," %}
       {% for method_name in method_order %}
         {% assign method = handwerk.contact[method_name] %}
-        <article class="contact-card js-anim" data-anim="animate__fadeInUp" data-once="true" data-delay="{{ forloop.index0 | times: 100 }}">
+        <article class="contact-card{% if forloop.last %} contact-card--wide{% endif %} js-anim" data-anim="animate__fadeInUp" data-once="true" data-delay="{{ forloop.index0 | times: 100 }}">
           <div class="contact-card__icon" aria-hidden="true">
             <span data-lucide="{{ method.icon }}"></span>
           </div>
@@ -50,10 +50,3 @@ nav_section: kontakt
     </aside>
   </div>
 </section>
-
-{% include handwerk/contact-band.html
-  kicker="Schnellkontakt"
-  title="Lieber direkt den passenden Kontaktweg wählen?"
-  text="WhatsApp für eine kurze Nachricht, Telefon für die schnelle Abstimmung oder E-Mail für eine unverbindliche Anfrage."
-  actions_key="quick-contact"
-%}

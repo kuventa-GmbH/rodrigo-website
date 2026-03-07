@@ -4,187 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34acdfc8-ca06-40a4-9da4-2de1131fc2a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_data/about.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_data/home.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_data/landing_pages.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_data/site_pages.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/about-sections/cta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/about-sections/education.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/about-sections/experience.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/about-sections/focus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/about-sections/hero.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/about-sections/intro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/about-sections/languages.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/about-sections/skills.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/home-sections/benefits.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/home-sections/climate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/home-sections/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/home-sections/hero.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/home-sections/process.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/home-sections/services.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/home-sections/why.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/landing/cta-block.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/landing/final-cta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/landing/hero.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/landing/render.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/landing/sections/cards.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/landing/sections/focus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/landing/sections/process.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/landing/sections/steps.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_includes/site-pages/render.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2026-02-21-audit-ohne-stress-dank-identity-governance.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2026-02-21-die-haeufigsten-fehler-in-identity-governance-and-administration-projekten.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2026-02-21-iga-braucht-saubere-rollen.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2026-02-21-nach-dem-start-ist-vor-der-arbeit.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2026-02-21-warum-die-einfuehrung-von-iga-mehr-ist-als-ein-it-projekt.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2026-02-21-zugriffsrechte-sind-chefsache.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/AGENTS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/site.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/site.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/files/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/files/cv.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/fonts/Satoshi-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/fonts/Satoshi-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/fonts/Satoshi-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/fonts/Satoshi-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/fonts/Satoshi-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/fonts/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/fonts/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/4-professionals-discussing-access-management-and.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/business-meeting-in-a-modern-office-diverse-team-s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/business-meeting-in-a-modern-office-diverse-team-s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/businessmeeting-in-einem-konferenzraum-zwei-bis-dr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/businessmeeting-in-einem-konferenzraum-zwei-bis-dr1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/businessmeeting-in-einem-konferenzraum-zwei-bis-dr2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/closeup-of-hands-holding-a-digital-keycard-and-a-t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/professional-reviewing-documents-and-laptop-in-an.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/scene-with-empty-desk-and-chair-cardboard-box-with.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/scene-with-empty-desk-and-chair-cardboard-box-with1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/senior-manager-standing-by-an-office-window-though.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/senior-manager-standing-by-an-office-window-though2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/small-team-35-people-in-a-modern-office-discussing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/blog/two-business-colleagues-looking-at-a-laptop-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/brand/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/blue-bulb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/bulb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/cap.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/creative.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/handshake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/leaf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/thumb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/icons/train.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/about/cicd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/about/code.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/about/security.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/about/user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/home/config.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/home/folders.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/home/grow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/home/path.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/home/process.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/home/security.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/home/userengagement.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/illustrations/home/userlaptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/photos/about/dennis.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/photos/about/hero.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/cookie-dough/cookiebanner.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/cookie-dough/cookiebanner.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/cookie-dough/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/datenschutz/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/impressum/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/kontakt/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/leistungen/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/site.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/site.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/site.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/files/cv.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Satoshi-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Satoshi-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Satoshi-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Satoshi-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Satoshi-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/4-professionals-discussing-access-management-and.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/business-meeting-in-a-modern-office-diverse-team-s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/business-meeting-in-a-modern-office-diverse-team-s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/businessmeeting-in-einem-konferenzraum-zwei-bis-dr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/businessmeeting-in-einem-konferenzraum-zwei-bis-dr1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/businessmeeting-in-einem-konferenzraum-zwei-bis-dr2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/closeup-of-hands-holding-a-digital-keycard-and-a-t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/professional-reviewing-documents-and-laptop-in-an.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/scene-with-empty-desk-and-chair-cardboard-box-with.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/scene-with-empty-desk-and-chair-cardboard-box-with1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/senior-manager-standing-by-an-office-window-though.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/senior-manager-standing-by-an-office-window-though2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/small-team-35-people-in-a-modern-office-discussing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/two-business-colleagues-looking-at-a-laptop-screen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brand/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/blue-bulb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/bulb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/cap.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/creative.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/handshake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/leaf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/thumb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/icons/train.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/about/cicd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/about/code.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/about/security.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/about/user.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/home/config.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/home/folders.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/home/grow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/home/path.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/home/process.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/home/security.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/home/userengagement.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/illustrations/home/userlaptop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/photos/about/dennis.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/photos/about/hero.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beraterprofil.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cookie-dough/cookiebanner.script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cookie-dough/cookiebanner.style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cookie-dough/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer-identity-plattform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datenschutzerklarung.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/identity-assessment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/identity-modernisierung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/impressum.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leistungen.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loesungen.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sso-plattform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ueber-mich.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ueber-uns.html" afterDir="false" />
+    <list default="true" id="34acdfc8-ca06-40a4-9da4-2de1131fc2a5" name="Changes" comment="first stable version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/site.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/site.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/kontakt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/kontakt/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/site.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/site.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.md" beforeDir="false" afterPath="$PROJECT_DIR$/contact.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,11 +89,24 @@
       <workItem from="1772570628932" duration="610000" />
       <workItem from="1772729340687" duration="594000" />
       <workItem from="1772783954862" duration="135000" />
-      <workItem from="1772916498223" duration="3986000" />
+      <workItem from="1772916498223" duration="5560000" />
     </task>
+    <task id="LOCAL-00001" summary="first stable version">
+      <option name="closed" value="true" />
+      <created>1772920772516</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772920772516</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first stable version" />
+    <option name="LAST_COMMIT_MESSAGE" value="first stable version" />
   </component>
 </project>
