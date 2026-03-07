@@ -24,7 +24,7 @@ lang: de
 description: >- # this means to ignore newlines until "baseurl:"
   Freundlicher Handwerkerbetrieb aus Rösrath für Bodenverlegung,
   Renovierungen, Badsanierung und Arbeiten im Außenbereich.
-baseurl: "/kuventa-website" # GitHub Pages project repo
+baseurl: "/rodrigo-website" # GitHub Pages project repo
 url: "https://kuventa-gmbh.github.io"
 twitter_username: jekyllrb
 github_username:  jekyll
