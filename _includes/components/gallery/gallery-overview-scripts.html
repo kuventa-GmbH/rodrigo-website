@@ -1,0 +1,22 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = Array.from(document.querySelectorAll("[data-filter-button]"));
+  const cards = Array.from(document.querySelectorAll("[data-gallery-project]"));
+  if (!buttons.length || !cards.length) return;
+
+  function applyFilter(filter) {
+    cards.forEach((card) => {
+      const matches = filter === "alle" || card.dataset.category === filter;
+      card.hidden = !matches;
+    });
+
+    buttons.forEach((button) => {
+      button.classList.toggle("is-active", button.dataset.filter === filter);
+    });
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => applyFilter(button.dataset.filter || "alle"));
+  });
+});
+</script>

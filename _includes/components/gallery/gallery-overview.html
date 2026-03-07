@@ -1,0 +1,30 @@
+{% assign projects = site.data.gallery_projects | default: empty %}
+{% assign categories = site.data.gallery_categories | default: empty %}
+<section class="section gallery-overview">
+  <div class="container">
+    <div class="gallery-filter js-anim" data-anim="animate__fadeInUp" data-once="true">
+      {% for category in categories %}
+        <button class="gallery-filter__button{% if category.slug == 'alle' %} is-active{% endif %}" type="button" data-filter-button data-filter="{{ category.slug }}">
+          {{ category.label }}
+        </button>
+      {% endfor %}
+    </div>
+
+    {% if projects and projects.size > 0 %}
+      <div class="gallery-masonry" data-gallery-grid>
+        {% for project in projects %}
+          {% assign delay = forloop.index0 | times: 60 %}
+          {% include components/project-card/project-card.html project=project delay=delay %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="gallery-empty">
+        <div class="gallery-empty__icon" aria-hidden="true">
+          <span data-lucide="images"></span>
+        </div>
+        <h2>Noch keine Projekte hinterlegt</h2>
+        <p>Sobald neue Ordner in `assets/img/galerie/` dazukommen, erscheinen sie hier automatisch.</p>
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -4,7 +4,13 @@ module GalleryProjects
   module_function
 
   GALLERY_ROOT = "assets/img/galerie"
-  PROJECT_ICON = "hammer"
+
+  CATEGORY_DEFINITIONS = [
+    { "slug" => "boeden", "label" => "Böden", "keywords" => %w[parkett vinyl boden fussleisten] },
+    { "slug" => "badsanierung", "label" => "Badsanierung", "keywords" => %w[bad badezimmer sanit] },
+    { "slug" => "aussenbereich", "label" => "Außenbereich", "keywords" => %w[terrasse balkon einfahrt pflaster zaun glasdach eingang aussen außen] },
+    { "slug" => "renovierung", "label" => "Renovierung", "keywords" => %w[renovierung ausbau fassade wohnkueche wohnzimmer schrank dachgeschoss tuer tür] }
+  ].freeze
 
   TITLE_OVERRIDES = {
     "balkon-ausbau" => "Balkonausbau",
@@ -73,6 +79,7 @@ module GalleryProjects
   def build_project(site, absolute_path)
     slug = File.basename(absolute_path)
     relative_dir = "/" + absolute_path.delete_prefix(site.source).sub(%r{^/}, "")
+    category = detect_category(slug)
 
     images = Dir.children(absolute_path)
       .reject { |name| name.start_with?(".") }
@@ -83,20 +90,36 @@ module GalleryProjects
       .map do |filename, index|
         {
           "src" => "#{relative_dir}/#{filename}",
-          "alt" => "#{alt_base(slug)} #{index + 1}"
+          "alt" => "#{alt_base(slug)} Bild #{index + 1}"
         }
       end
 
     {
       "slug" => slug,
+      "url" => "/galerie/#{slug}/",
       "title" => display_title(slug),
       "description" => project_description(slug),
-      "icon" => PROJECT_ICON,
+      "category" => category["label"],
+      "category_slug" => category["slug"],
+      "icon" => "hammer",
       "image_count" => images.length,
+      "image_count_label" => images.length == 1 ? "1 Bild" : "#{images.length} Bilder",
       "cover_image" => images.first && images.first["src"],
       "cover_alt" => images.first && images.first["alt"],
       "images" => images
     }
+  end
+
+  def categories_for(projects)
+    [{ "slug" => "alle", "label" => "Alle" }] + CATEGORY_DEFINITIONS.map do |category|
+      { "slug" => category["slug"], "label" => category["label"] }
+    end
+  end
+
+  def detect_category(slug)
+    CATEGORY_DEFINITIONS.find do |category|
+      category["keywords"].any? { |keyword| slug.include?(keyword) }
+    end || CATEGORY_DEFINITIONS.last
   end
 
   def display_title(slug)
@@ -131,6 +154,36 @@ module GalleryProjects
   end
 end
 
-Jekyll::Hooks.register :site, :pre_render do |site|
-  site.data["gallery_projects"] = GalleryProjects.build(site)
+class GalleryProjectPage < Jekyll::PageWithoutAFile
+  def initialize(site, project)
+    @site = site
+    @base = site.source
+    @dir = File.join("galerie", project["slug"])
+    @name = "index.html"
+
+    process(@name)
+    self.content = ""
+    self.data = {
+      "layout" => "gallery-project",
+      "title" => project["title"],
+      "description" => project["description"],
+      "nav_section" => "galerie",
+      "project" => project
+    }
+  end
+end
+
+class GalleryProjectPageGenerator < Jekyll::Generator
+  safe true
+  priority :low
+
+  def generate(site)
+    projects = GalleryProjects.build(site)
+    site.data["gallery_projects"] = projects
+    site.data["gallery_categories"] = GalleryProjects.categories_for(projects)
+
+    projects.each do |project|
+      site.pages << GalleryProjectPage.new(site, project)
+    end
+  end
 end

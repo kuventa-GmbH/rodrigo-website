@@ -1,0 +1,84 @@
+{% assign project = include.project | default: page.project %}
+<section class="section page-hero gallery-project-hero">
+  <div class="container gallery-project-hero__inner">
+    <div class="gallery-project-hero__copy js-anim" data-anim="animate__fadeInLeft" data-once="true">
+      <a class="gallery-back-link" href="{{ '/galerie/' | relative_url }}">
+        <span data-lucide="arrow-left" aria-hidden="true"></span>
+        <span>Zurück zur Galerie</span>
+      </a>
+      <p class="eyebrow">{{ project.category }}</p>
+      <h1 class="hero-title page-title">{{ project.title }}</h1>
+      <p class="hero-text page-text">{{ project.description }}</p>
+    </div>
+
+    <aside class="page-hero__aside js-anim" data-anim="animate__fadeInRight" data-once="true">
+      <div class="info-pill">
+        <span aria-hidden="true" data-lucide="hammer"></span>
+        <span>{{ project.category }}</span>
+      </div>
+      <div class="info-pill">
+        <span aria-hidden="true" data-lucide="image"></span>
+        <span>{{ project.image_count_label }}</span>
+      </div>
+      <div class="info-pill">
+        <span aria-hidden="true" data-lucide="map-pin"></span>
+        <span>Rösrath und Umgebung</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container gallery-detail-shell">
+    <div class="gallery-detail-shell__main js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <div class="section-intro">
+        <p class="eyebrow">Projektbilder</p>
+        <h2 class="sec-heading">Ein paar Eindrücke aus dem Projekt</h2>
+        <p>Per Wisch auf dem Handy oder mit den Pfeilen können Sie sich die Bilder in Ruhe ansehen. Ein Klick auf ein Bild öffnet die große Ansicht.</p>
+      </div>
+
+      {% include components/carousel/project-carousel.html project=project %}
+    </div>
+
+    <aside class="gallery-detail-shell__side js-anim" data-anim="animate__fadeInUp" data-once="true" data-delay="80">
+      <p class="eyebrow">Kurz zusammengefasst</p>
+      <h2>Worum es bei diesem Projekt ging</h2>
+      <p>{{ project.description }}</p>
+      <ul class="detail-list detail-list--compact">
+        <li>
+          <span aria-hidden="true" data-lucide="hammer"></span>
+          <span>{{ project.category }}</span>
+        </li>
+        <li>
+          <span aria-hidden="true" data-lucide="image"></span>
+          <span>{{ project.image_count_label }}</span>
+        </li>
+        <li>
+          <span aria-hidden="true" data-lucide="message-circle"></span>
+          <span>Persönliche Abstimmung direkt und unkompliziert</span>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<div class="gallery-lightbox" data-gallery-lightbox hidden>
+  <button class="gallery-lightbox__backdrop" type="button" aria-label="Ansicht schließen" data-gallery-close></button>
+  <div class="gallery-lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="galleryLightboxTitle">
+    <button class="gallery-lightbox__close" type="button" aria-label="Ansicht schließen" data-gallery-close>&times;</button>
+    <p class="eyebrow">Projektbild</p>
+    <div class="gallery-lightbox__top">
+      <h2 id="galleryLightboxTitle" class="gallery-lightbox__title"></h2>
+      <p class="gallery-lightbox__count" data-gallery-count></p>
+    </div>
+    <div class="gallery-lightbox__frame">
+      <button class="gallery-lightbox__nav gallery-lightbox__nav--prev" type="button" aria-label="Vorheriges Bild" data-gallery-prev>
+        <span data-lucide="arrow-left" aria-hidden="true"></span>
+      </button>
+      <button class="gallery-lightbox__nav gallery-lightbox__nav--next" type="button" aria-label="Nächstes Bild" data-gallery-next>
+        <span data-lucide="arrow-right" aria-hidden="true"></span>
+      </button>
+      <img class="gallery-lightbox__image" src="" alt="">
+    </div>
+  </div>
+</div>

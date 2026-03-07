@@ -7,7 +7,7 @@ nav_section: galerie
 ---
 {% assign handwerk = site.data.handwerk %}
 {% include handwerk/page-hero.html hero=handwerk.pages.galerie %}
-{% include components/gallery/gallery-section.html %}
+{% include components/gallery/gallery-overview.html %}
 
 {% include handwerk/contact-band.html
   kicker="Kontakt"
@@ -16,4 +16,4 @@ nav_section: galerie
   actions_key="gallery"
 %}
 
-{% include components/gallery/gallery-scripts.html %}
+{% include components/gallery/gallery-overview-scripts.html %}
