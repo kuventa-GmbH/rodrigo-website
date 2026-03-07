@@ -1,0 +1,19 @@
+---
+layout: default
+title: Galerie
+description: Einblicke in abgeschlossene Handwerksprojekte aus Rösrath und Umgebung.
+permalink: /galerie/
+nav_section: galerie
+---
+{% assign handwerk = site.data.handwerk %}
+{% include handwerk/page-hero.html hero=handwerk.pages.galerie %}
+{% include components/gallery/gallery-section.html %}
+
+{% include handwerk/contact-band.html
+  kicker="Kontakt"
+  title="Haben Sie ein ähnliches Projekt geplant?"
+  text="Schreiben Sie mir gern kurz per WhatsApp oder melden Sie sich über die Anfrage. Dann schauen wir gemeinsam, was sinnvoll ist."
+  actions_key="gallery"
+%}
+
+{% include components/gallery/gallery-scripts.html %}

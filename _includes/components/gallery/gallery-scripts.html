@@ -1,0 +1,84 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.querySelector("[data-gallery-lightbox]");
+  if (!lightbox) return;
+
+  const lightboxImage = lightbox.querySelector(".gallery-lightbox__image");
+  const lightboxTitle = lightbox.querySelector(".gallery-lightbox__title");
+  const lightboxCount = lightbox.querySelector("[data-gallery-count]");
+  const prevButton = lightbox.querySelector("[data-gallery-prev]");
+  const nextButton = lightbox.querySelector("[data-gallery-next]");
+  const closeButtons = lightbox.querySelectorAll("[data-gallery-close]");
+  let activeItems = [];
+  let activeIndex = 0;
+
+  function renderLightbox() {
+    const activeItem = activeItems[activeIndex];
+    if (!activeItem) return;
+
+    lightboxImage.setAttribute("src", activeItem.dataset.gallerySrc || "");
+    lightboxImage.setAttribute("alt", activeItem.dataset.galleryAlt || "");
+    lightboxTitle.textContent = activeItem.dataset.galleryTitle || "";
+    lightboxCount.textContent = `${activeIndex + 1} / ${activeItems.length}`;
+
+    const hasMultiple = activeItems.length > 1;
+    prevButton.hidden = !hasMultiple;
+    nextButton.hidden = !hasMultiple;
+    prevButton.disabled = !hasMultiple;
+    nextButton.disabled = !hasMultiple;
+  }
+
+  function changeImage(step) {
+    if (!activeItems.length) return;
+    activeIndex = (activeIndex + step + activeItems.length) % activeItems.length;
+    renderLightbox();
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    document.body.classList.remove("gallery-lightbox-open");
+    lightboxImage.setAttribute("src", "");
+    lightboxImage.setAttribute("alt", "");
+    lightboxTitle.textContent = "";
+    lightboxCount.textContent = "";
+    activeItems = [];
+    activeIndex = 0;
+  }
+
+  document.querySelectorAll("[data-gallery-open]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const carousel = button.closest("[data-carousel]");
+      activeItems = carousel ? Array.from(carousel.querySelectorAll("[data-gallery-open]")) : [button];
+      activeIndex = Math.max(activeItems.indexOf(button), 0);
+      lightbox.hidden = false;
+      document.body.classList.add("gallery-lightbox-open");
+      renderLightbox();
+    });
+  });
+
+  prevButton.addEventListener("click", () => changeImage(-1));
+  nextButton.addEventListener("click", () => changeImage(1));
+
+  closeButtons.forEach((button) => {
+    button.addEventListener("click", closeLightbox);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (lightbox.hidden) return;
+
+    if (event.key === "Escape") {
+      closeLightbox();
+      return;
+    }
+
+    if (event.key === "ArrowLeft") {
+      changeImage(-1);
+      return;
+    }
+
+    if (event.key === "ArrowRight") {
+      changeImage(1);
+    }
+  });
+});
+</script>

@@ -1,0 +1,24 @@
+{% assign project = include.project %}
+<div class="project-carousel" id="carousel-{{ project.slug }}" data-carousel>
+  <div class="project-carousel__viewport" data-carousel-viewport>
+    <div class="project-carousel__track">
+      {% for image in project.images %}
+        <figure class="project-carousel__slide">
+          <button
+            class="project-carousel__zoom"
+            type="button"
+            data-gallery-open
+            data-gallery-src="{{ image.src | relative_url }}"
+            data-gallery-alt="{{ image.alt }}"
+            data-gallery-title="{{ project.title }}"
+            data-gallery-index="{{ forloop.index0 }}">
+            <img src="{{ image.src | relative_url }}" alt="{{ image.alt }}" loading="lazy">
+            <span class="project-carousel__zoom-icon" aria-hidden="true">
+              <span data-lucide="search"></span>
+            </span>
+          </button>
+        </figure>
+      {% endfor %}
+    </div>
+  </div>
+</div>

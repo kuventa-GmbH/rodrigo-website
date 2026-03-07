@@ -1,0 +1,47 @@
+{% assign projects = site.data.gallery_projects | default: empty %}
+<section class="section gallery-section">
+  <div class="container">
+    <div class="section-intro js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <p class="eyebrow">Projektgalerie</p>
+      <h2 class="sec-heading">Ausgewählte Arbeiten aus dem Alltag</h2>
+      <p>Jeder Ordner steht hier für ein eigenes Projekt. So bekommen Sie einen ehrlichen Eindruck davon, wie die Arbeiten vor Ort aussehen.</p>
+    </div>
+
+    {% if projects and projects.size > 0 %}
+      <div class="gallery-project-list">
+        {% for project in projects %}
+          {% include components/project-card/project-card.html project=project index=forloop.index %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="gallery-empty">
+        <div class="gallery-empty__icon" aria-hidden="true">
+          <span data-lucide="images"></span>
+        </div>
+        <h2>Noch keine Projekte hinterlegt</h2>
+        <p>Sobald neue Bilder in `assets/img/galerie/` dazukommen, erscheinen sie hier automatisch.</p>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<div class="gallery-lightbox" data-gallery-lightbox hidden>
+  <button class="gallery-lightbox__backdrop" type="button" aria-label="Ansicht schließen" data-gallery-close></button>
+  <div class="gallery-lightbox__dialog" role="dialog" aria-modal="true" aria-labelledby="galleryLightboxTitle">
+    <button class="gallery-lightbox__close" type="button" aria-label="Ansicht schließen" data-gallery-close>&times;</button>
+    <p class="eyebrow">Projektbild</p>
+    <div class="gallery-lightbox__top">
+      <h2 id="galleryLightboxTitle" class="gallery-lightbox__title"></h2>
+      <p class="gallery-lightbox__count" data-gallery-count></p>
+    </div>
+    <div class="gallery-lightbox__frame">
+      <button class="gallery-lightbox__nav gallery-lightbox__nav--prev" type="button" aria-label="Vorheriges Bild" data-gallery-prev>
+        <span data-lucide="arrow-left" aria-hidden="true"></span>
+      </button>
+      <button class="gallery-lightbox__nav gallery-lightbox__nav--next" type="button" aria-label="Nächstes Bild" data-gallery-next>
+        <span data-lucide="arrow-right" aria-hidden="true"></span>
+      </button>
+      <img class="gallery-lightbox__image" src="" alt="">
+    </div>
+  </div>
+</div>

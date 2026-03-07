@@ -1,0 +1,24 @@
+{% assign project = include.project %}
+{% assign card_delay = include.index | minus: 1 | times: 70 %}
+<article class="gallery-project js-anim" data-anim="animate__fadeInUp" data-once="true" data-delay="{{ card_delay }}" id="{{ project.slug }}">
+  <div class="gallery-project__card">
+    <div class="gallery-project__meta">
+      <div class="gallery-project__icon" aria-hidden="true">
+        <span data-lucide="{{ project.icon | default: 'hammer' }}"></span>
+      </div>
+      <div>
+        <p class="eyebrow">Projekt {{ include.index }}</p>
+        <h2>{{ project.title }}</h2>
+      </div>
+    </div>
+
+    <p class="gallery-project__text">{{ project.description }}</p>
+
+    <div class="gallery-project__actions">
+      <p class="gallery-project__count">{{ project.image_count }} {% if project.image_count == 1 %}Bild{% else %}Bilder{% endif %}</p>
+      <p class="gallery-project__hint">Bild antippen oder anklicken für die große Ansicht</p>
+    </div>
+  </div>
+
+  {% include components/carousel/project-carousel.html project=project %}
+</article>
