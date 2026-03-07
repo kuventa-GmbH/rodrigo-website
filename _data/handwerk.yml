@@ -79,6 +79,16 @@ cta_sets:
       href: "mailto:kontakt@handwerk-roesrath.de"
       icon: "mail"
       style: "secondary"
+  gallery:
+    - label: "WhatsApp schreiben"
+      href: "https://wa.me/491701234567?text=Hallo%2C%20ich%20habe%20ein%20%C3%A4hnliches%20Projekt%20und%20m%C3%B6chte%20es%20kurz%20besprechen."
+      icon: "message-circle"
+      style: "secondary"
+    - label: "Projekt anfragen"
+      href: "/kontakt/"
+      internal: true
+      icon: "arrow-right"
+      style: "primary"
   footer:
     - label: "WhatsApp"
       href: "https://wa.me/491701234567?text=Hallo%2C%20ich%20m%C3%B6chte%20ein%20Projekt%20besprechen."
@@ -155,13 +165,15 @@ pages:
         label: "Rösrath und Umgebung"
   galerie:
     kicker: "Galerie"
-    title: "Einblicke folgen in Kürze"
-    text: "Hier entstehen bald Einblicke in abgeschlossene Projekte."
+    title: "Einblicke in meine Projekte"
+    text: "Hier sehen Sie eine kleine Auswahl meiner bisherigen Arbeiten."
     badges:
-      - icon: "image"
-        label: "Bilder folgen"
-      - icon: "house"
-        label: "Projekte rund ums Haus"
+      - icon: "images"
+        label: "Projektbilder"
+      - icon: "hammer"
+        label: "Arbeiten rund ums Haus"
+      - icon: "search"
+        label: "Mit Detailansicht"
   kontakt:
     kicker: "Kontakt"
     title: "Kontakt aufnehmen"
