@@ -1,0 +1,22 @@
+<section class="section section-alt services-section" id="services">
+  <div class="container center js-anim" data-anim="animate__fadeInRight" data-once="true">
+    <h2 class="sec-heading">{{ site.data.home.services.heading }}</h2>
+
+    <div class="cards cards-3">
+      {% for s in site.data.home.services.blocks %}
+      <div class="card animate__animated animate__fadeInRight">
+        <div class="card-icon"><img src="{{ s.icon | relative_url }}"></div>
+        <h3>{{ s.title }}</h3>
+        <ul class="list">
+          {% for p in s.points %}
+          <li>{{ p }}</li>
+          {% endfor %}
+        </ul>
+        {% if s.link %}
+          <a class="btn btn-secondary" href="{{ s.link | relative_url }}">{{ s.link_text | default: "Mehr erfahren" }}</a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

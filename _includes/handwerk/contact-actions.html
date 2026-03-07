@@ -1,0 +1,14 @@
+{% assign buttons = site.data.handwerk.cta_sets[include.key] %}
+{% if buttons %}
+  <div class="action-group{% if include.center %} action-group--center{% endif %}{% if include.class %} {{ include.class }}{% endif %}">
+    {% for button in buttons %}
+      <a
+        class="action-pill action-pill--{{ button.style | default: 'secondary' }}"
+        href="{% if button.internal %}{{ button.href | relative_url }}{% else %}{{ button.href }}{% endif %}"
+        {% if button.href contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>
+        <span class="action-pill__icon" aria-hidden="true" data-lucide="{{ button.icon }}"></span>
+        <span>{{ button.label }}</span>
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -1,0 +1,15 @@
+<section class="section section-alt">
+  <div class="container cta">
+    <div class="cta-img js-anim" data-anim="animate__fadeIn">
+      <img src="{{ site.data.about.cta.image | relative_url }}" alt="" loading="lazy">
+    </div>
+    <div class="cta-content js-anim" data-anim="animate__fadeInRight">
+      <img src="{{ site.data.about.cta.icon | relative_url }}" alt="" loading="lazy">
+      <h2>{{ site.data.about.cta.title }}</h2>
+      <p>{{ site.data.about.cta.text }}</p>
+      <a class="btn btn-primary" href="{{ site.data.about.cta.button_link | relative_url }}">
+        {{ site.data.about.cta.button_text }}
+      </a>
+    </div>
+  </div>
+</section>

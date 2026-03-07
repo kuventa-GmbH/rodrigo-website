@@ -1,0 +1,19 @@
+<section class="section">
+  <div class="container center">
+    <h2 class="sec-heading js-anim" data-anim="animate__fadeInDown">{{ site.data.about.skills.heading }}</h2>
+
+    <div class="skills-grid js-anim" data-anim="animate__fadeIn" data-once="true">
+      {% for s in site.data.about.skills.blocks %}
+      <div class="skill-card">
+        <img class="skill-icon" src="{{ s.icon | relative_url }}" alt="" loading="lazy">
+        <h3>{{ s.title }}</h3>
+        <ul class="bullets">
+          {% for p in s.points %}
+            <li>{{ p }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

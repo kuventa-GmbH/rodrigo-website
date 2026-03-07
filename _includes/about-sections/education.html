@@ -1,0 +1,16 @@
+<section class="section edu-sec">
+  <div class="container center">
+    <h2 class="sec-heading js-anim" data-anim="animate__fadeInDown" >{{ site.data.about.education.heading }}</h2>
+
+    <div class="edu-cards">
+      {% for c in site.data.about.education.cards %}
+      <div class="edu-card js-anim" data-anim="animate__fadeInUp">
+        <div class="edu-icon"><img src="{{ c.icon | relative_url }}" alt="" loading="lazy"></div>
+        {% if c.date != "" %}<div class="edu-date">{{ c.date }}</div>{% endif %}
+        <div class="edu-title">{{ c.title }}</div>
+        <div class="edu-org">{{ c.org }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

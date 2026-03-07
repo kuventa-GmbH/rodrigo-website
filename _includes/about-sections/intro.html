@@ -1,0 +1,14 @@
+<section class="section about-intro">
+  <div class="container ">
+    <h1 class="js-anim" data-anim="animate__fadeInLeft" data-once="true">{{ site.data.about.intro.title }}</h1>
+    <p class="lead js-anim" data-anim="animate__fadeInLeft" data-once="true">{{ site.data.about.intro.text }}</p>
+    <p class="lead js-anim" data-anim="animate__fadeInLeft" data-once="true">{{ site.data.about.intro.text2 }}</p>
+    <a class="btn btn-secondary"
+       href="{{ site.data.about.intro.button_link | relative_url }}"
+       {% if site.data.about.intro.button_download %}
+       download="{{ site.data.about.intro.button_download_filename | default: 'cv.pdf' }}"
+       {% endif %}>
+      {{ site.data.about.intro.button_text }}
+    </a>
+  </div>
+</section>

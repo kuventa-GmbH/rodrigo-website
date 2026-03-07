@@ -1,0 +1,150 @@
+{% assign brand = site.data.handwerk.site %}
+{% assign nav_items = site.data.handwerk.navigation %}
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand-block">
+      <a class="footer-brand" href="{{ '/' | relative_url }}">
+        <img class="brand-logo brand-logo--footer" src="{{ '/assets/img/brand/logo.png' | relative_url }}" alt="{{ brand.name }}">
+        <span class="brand-copy">
+          <span class="brand-title">{{ brand.name }}</span>
+          <span class="brand-subtitle">{{ brand.tagline }}</span>
+        </span>
+      </a>
+      <p class="footer-text">{{ brand.footer_text }}</p>
+      <div class="footer-meta">
+        <span>Handwerkerbetrieb</span>
+        <span>Rösrath</span>
+        <span>{{ brand.service_area }}</span>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <p class="footer-heading">Links</p>
+      {% for item in nav_items %}
+        {% unless item.section == 'start' %}
+          {% assign footer_active = false %}
+          {% if page.nav_section == item.section %}
+            {% assign footer_active = true %}
+          {% endif %}
+          <a href="{{ item.url | relative_url }}" class="footer-link {% if footer_active %}is-active{% endif %}">{{ item.label }}</a>
+        {% endunless %}
+      {% endfor %}
+    </nav>
+
+    <div class="footer-contact">
+      <p class="footer-heading">Kontakt</p>
+      {% include handwerk/contact-actions.html key="footer" %}
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <div class="footer-legal">
+      <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
+      <a href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a>
+    </div>
+
+    <div class="footer-copy">
+      <span>{{ site.time | date: "%Y" }} {{ brand.name }}</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+
+  const items = document.querySelectorAll(".js-anim");
+  if (!items.length) return;
+
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) {
+    items.forEach(el => el.classList.add("is-visible"));
+    return;
+  }
+
+  const seen = new WeakMap();
+
+  function play(el) {
+    const anim = el.dataset.anim || "animate__fadeInUp";
+    const delay = parseInt(el.dataset.delay || "0", 10);
+
+    el.classList.remove("animate__animated", anim);
+    el.style.animationDelay = delay ? `${delay}ms` : "";
+
+    void el.offsetWidth;
+
+    el.classList.add("is-visible", "animate__animated", anim);
+  }
+
+  function reset(el) {
+    const anim = el.dataset.anim || "animate__fadeInUp";
+    el.classList.remove("animate__animated", anim);
+    el.style.animationDelay = "";
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      const once = el.dataset.once === "true";
+
+      const nowVisible = entry.isIntersecting && entry.intersectionRatio >= 0.25;
+      const wasVisible = seen.get(el) === true;
+
+      // ENTER: trigger only once per entry
+      if (nowVisible && !wasVisible) {
+        if (once && el.dataset.animated === "true") return;
+
+        play(el);
+        seen.set(el, true);
+        el.dataset.animated = "true";
+
+        if (once) observer.unobserve(el);
+        return;
+      }
+
+      if (!entry.isIntersecting && wasVisible && entry.intersectionRatio === 0) {
+        if (!once) reset(el);
+        seen.set(el, false);
+      }
+    });
+  }, {
+    threshold: [0, 0.25]
+  });
+
+  items.forEach(el => observer.observe(el));
+});
+
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("navToggle");
+  const nav = document.getElementById("primary-nav");
+  if (!btn || !nav) return;
+
+  btn.addEventListener("click", () => {
+    const open = nav.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  // close menu when clicking a link (mobile)
+  nav.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+      nav.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!nav.classList.contains("is-open")) return;
+    const clickedInside = nav.contains(e.target) || btn.contains(e.target);
+    if (!clickedInside) {
+      nav.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+</script>

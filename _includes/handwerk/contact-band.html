@@ -1,0 +1,18 @@
+<section class="section">
+  <div class="container">
+    <div class="cta-band js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <div class="cta-band__copy">
+        {% if include.kicker %}
+          <p class="eyebrow">{{ include.kicker }}</p>
+        {% endif %}
+        <h2 class="sec-heading">{{ include.title }}</h2>
+        {% if include.text %}
+          <p>{{ include.text }}</p>
+        {% endif %}
+      </div>
+      <div class="cta-band__actions">
+        {% include handwerk/contact-actions.html key=include.actions_key center=true %}
+      </div>
+    </div>
+  </div>
+</section>

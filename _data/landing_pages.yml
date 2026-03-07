@@ -1,0 +1,479 @@
+shared:
+  booking_link: "/kontakt/"
+  cta_text: "Jetzt Termin buchen"
+  cta_note: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+
+identity-modernisierung:
+  hero:
+    kicker: "Keycloak Beratung für mittelständische Unternehmen"
+    title: "Moderne Identity-Infrastruktur für cloudfähige Unternehmen"
+    text: "Zentralisieren Sie Authentifizierung, ermöglichen Sie Single Sign-On und bereiten Sie Ihre IT-Landschaft auf Cloud- und API-basiertes Arbeiten vor."
+    image: "/assets/img/illustrations/home/grow.svg"
+    image_alt: "Illustration zur Modernisierung der Identity-Infrastruktur"
+  sections:
+    - template: "cards"
+      heading: "Typische Probleme im Mittelstand"
+      intro: "Viele Unternehmen wachsen technisch schneller als ihre Authentifizierungslandschaft. Das erzeugt Reibung in Betrieb, Sicherheit und Cloud-Migration."
+      items:
+        - title: "Mehrere Logins"
+          text: "Mitarbeitende nutzen für verschiedene Anwendungen unterschiedliche Zugangsdaten und verlieren den Überblick."
+          icon: "/assets/img/icons/circle.svg"
+        - title: "Legacy-Authentifizierung"
+          text: "Bestehende Systeme sind eng an Active Directory, LDAP oder lokale Benutzerkonten gebunden."
+          icon: "/assets/img/icons/cap.svg"
+        - title: "Fragmentierte Benutzerverwaltung"
+          text: "Konten, Rollen und Zugriffe werden verteilt gepflegt und nur schwer konsistent gehalten."
+          icon: "/assets/img/icons/search.svg"
+        - title: "Uneinheitliche MFA"
+          text: "Mehrfaktor-Authentifizierung ist nur für einzelne Systeme eingeführt oder unterschiedlich umgesetzt."
+          icon: "/assets/img/icons/star.svg"
+        - title: "Mehr Cloud-Services"
+          text: "Neue SaaS- und API-Dienste kommen hinzu, während die Identity-Architektur auf On-Premise-Muster festgelegt bleibt."
+          icon: "/assets/img/icons/creative.svg"
+      cta:
+        alt: true
+        title: "Identity modernisieren, bevor Komplexität steigt"
+        text: "In einem kurzen Gespräch ordnen wir Ihre aktuelle Lage ein und zeigen erste Modernisierungsschritte auf."
+    - template: "process"
+      alt: true
+      heading: "Warum Identity Cloud-Transformation blockiert"
+      text: "Moderne Anwendungen erwarten standardisierte Authentifizierung und einen zentralen Identity Provider."
+      paragraph_links:
+        - prefix: "Viele Unternehmen beginnen mit einem "
+          link_text: "Identity Modernization Assessment"
+          link: "/identity-assessment/"
+          suffix: ", um ihre Ausgangslage sauber zu bewerten."
+      subheading: "Moderne Zielarchitekturen brauchen"
+      image: "/assets/img/illustrations/home/path.svg"
+      points:
+        - "OAuth2 für delegierte Autorisierung"
+        - "OpenID Connect für standardisierte Logins"
+        - "tokenbasierte Authentifizierung für APIs und Microservices"
+        - "einen zentralen Identity Provider statt vieler einzelner Login-Mechanismen"
+      note: "Active Directory und lokale Benutzerkonten bleiben wichtige Quellen, sind allein aber selten die cloudfähige Zielarchitektur."
+      cta:
+        title: "Cloudfähigkeit beginnt bei Identity"
+        text: "Wir bewerten, wo Ihre heutige Architektur moderne Standards blockiert und wie Keycloak die Brücke bildet."
+    - template: "focus"
+      heading: "Der Identity Platform Ansatz"
+      text: "Eine zentrale Identity Plattform entkoppelt Benutzer und Anwendungen. Dadurch können neue Systeme einfacher integriert und bestehende Login-Prozesse schrittweise modernisiert werden."
+      paragraph_links:
+        - prefix: "Für interne Anwendungen implementieren wir häufig eine "
+          link_text: "Single Sign-On Plattform"
+          link: "/sso-plattform/"
+          suffix: "."
+        - prefix: "Für Kundenportale eignet sich eine "
+          link_text: "Customer Identity Plattform"
+          link: "/customer-identity-plattform/"
+          suffix: "."
+      image: "/assets/img/illustrations/about/user.svg"
+      columns:
+        - title: "Architekturidee"
+          lines:
+            - "Benutzer"
+            - "&darr;"
+            - "Identity Plattform (Keycloak)"
+            - "&darr;"
+            - "Anwendungen, APIs, Cloud Services und Legacy Systeme"
+        - title: "Vorteile"
+          points:
+            - "Single Sign-On über mehrere Systeme"
+            - "Multi-Faktor-Authentifizierung an zentraler Stelle"
+            - "zentrale Benutzerverwaltung und konsistente Policies"
+            - "sichere API-Authentifizierung mit Tokens"
+      cta:
+        alt: true
+        title: "Von Insel-Lösungen zur zentralen Identity Plattform"
+        text: "Wir planen mit Ihnen eine Zielarchitektur, die On-Premise, Cloud und APIs sauber zusammenführt."
+    - template: "cards"
+      alt: true
+      heading: "Unsere Leistungen"
+      intro: "Sie können mit einem Assessment starten oder direkt eine Zielplattform für interne oder externe Nutzer aufbauen."
+      items:
+        - title: "Identity Modernization Assessment"
+          text: "Strukturierte Analyse Ihrer bestehenden Authentifizierungslandschaft mit Roadmap für die nächsten Schritte."
+          icon: "/assets/img/icons/search.svg"
+          link: "/identity-assessment/"
+          link_text: "Mehr erfahren"
+          link_as_button: true
+        - title: "Single Sign-On Plattform"
+          text: "Zentrale Authentifizierung für interne Systeme, SaaS-Anwendungen und APIs auf Basis von Keycloak."
+          icon: "/assets/img/icons/cap.svg"
+          link: "/sso-plattform/"
+          link_text: "Mehr erfahren"
+          link_as_button: true
+        - title: "Customer Identity Plattform"
+          text: "Skalierbare Login-Plattform für Kunden-, Partner- und Entwicklerportale."
+          icon: "/assets/img/icons/creative.svg"
+          link: "/customer-identity-plattform/"
+          link_text: "Mehr erfahren"
+          link_as_button: true
+      cta:
+        title: "Der richtige Einstieg hängt von Ihrer Ausgangslage ab"
+        text: "Wir helfen Ihnen, Assessment, SSO-Plattform oder Customer Identity sauber voneinander abzugrenzen."
+  final_cta:
+    alt: true
+    image: "/assets/img/photos/about/dennis.webp"
+    icon: "/assets/img/icons/handshake.png"
+    title: "Jetzt Termin für ein Erstgespräch buchen"
+    text: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+
+identity-assessment:
+  hero:
+    kicker: "Analyse und Roadmap"
+    title: "Identity Modernization Assessment"
+    text: "Eine strukturierte Analyse Ihrer aktuellen Authentifizierungs- und Benutzerverwaltungssysteme mit klarer Roadmap für eine cloudfähige Identity-Plattform."
+  sections:
+    - template: "cards"
+      heading: "Typische Ausgangssituation"
+      intro: "Das Assessment ist für Unternehmen gedacht, die ihre heutige Identity-Landschaft fundiert bewerten wollen, bevor sie investieren oder migrieren."
+      items:
+        - title: "Active Directory als Kernsystem"
+          text: "AD ist die wichtigste Benutzerquelle, reicht für moderne Cloud- und API-Szenarien aber oft nicht allein aus."
+          icon: "/assets/img/icons/circle.svg"
+        - title: "Viele Einzellogins"
+          text: "Fachanwendungen, Portale und Tools verwalten ihre Zugriffe separat."
+          icon: "/assets/img/icons/creative.svg"
+        - title: "Kaum zentrale Authentifizierung"
+          text: "SSO, zentrale Policies und einheitliche Login-Flows fehlen oder sind nur teilweise umgesetzt."
+          icon: "/assets/img/icons/search.svg"
+        - title: "Steigende Sicherheitsanforderungen"
+          text: "MFA, Auditanforderungen und Zugriffstransparenz werden wichtiger."
+          icon: "/assets/img/icons/star.svg"
+        - title: "Geplante Cloud-Migration"
+          text: "Neue Cloud-Dienste sollen angebunden werden, die bestehende Architektur ist dafür jedoch nicht vorbereitet."
+          icon: "/assets/img/icons/cap.svg"
+      cta:
+        alt: true
+        title: "Schaffen Sie zuerst ein klares Bild Ihrer Ausgangslage"
+        text: "Ein Assessment reduziert Fehlentscheidungen und macht Modernisierung planbar."
+    - template: "focus"
+      alt: true
+      heading: "Was wir analysieren"
+      text: "Wir betrachten nicht nur einzelne Anwendungen, sondern die gesamte Authentifizierungsarchitektur mit Blick auf Sicherheit, Standards und Integrationsfähigkeit."
+      paragraph_links:
+        - prefix: "Aus dem Assessment entstehen häufig konkrete Folgeprojekte wie eine "
+          link_text: "Single Sign-On Plattform"
+          link: "/sso-plattform/"
+          suffix: " für interne Anwendungen."
+      image: "/assets/img/illustrations/home/folders.svg"
+      columns:
+        - title: "Technischer Ist-Zustand"
+          points:
+            - "bestehende Authentifizierungsarchitektur"
+            - "Identity-Quellen wie AD, LDAP oder lokale Konten"
+            - "Login-Mechanismen der Anwendungen"
+        - title: "Zukunftsfähigkeit"
+          points:
+            - "aktuelles Sicherheitsniveau inklusive MFA"
+            - "Integrationsmöglichkeiten für SaaS, APIs und neue Anwendungen"
+            - "Vorbereitung für OAuth2 und OpenID Connect"
+      cta:
+        title: "Assessment statt Bauchgefühl"
+        text: "Wir priorisieren die Themen, die für Ihre Cloud- und Sicherheitsstrategie wirklich relevant sind."
+    - template: "cards"
+      heading: "Ergebnisse des Assessments"
+      intro: "Sie erhalten konkrete Ergebnisse, die sich direkt für Architekturentscheidungen und Folgeprojekte nutzen lassen."
+      paragraph_links:
+        - prefix: "Für interne Anwendungen implementieren wir häufig eine "
+          link_text: "Single Sign-On Plattform"
+          link: "/sso-plattform/"
+          suffix: "."
+        - prefix: "Für Kundenportale eignet sich eine "
+          link_text: "Customer Identity Plattform"
+          link: "/customer-identity-plattform/"
+          suffix: "."
+      items:
+        - title: "Architektur-Übersicht"
+          text: "Transparente Darstellung Ihrer heutigen Identity- und Authentifizierungslandschaft."
+          icon: "/assets/img/icons/search.svg"
+        - title: "Sicherheitsanalyse"
+          text: "Einordnung von Risiken, Schwachstellen und Handlungsfeldern."
+          icon: "/assets/img/icons/star.svg"
+        - title: "Zielarchitektur mit Keycloak"
+          text: "Konkretes Zielbild für eine zentrale Identity-Plattform."
+          icon: "/assets/img/icons/cap.svg"
+        - title: "Modernisierungs-Roadmap"
+          text: "Schrittweise Umsetzungsplanung statt Big-Bang-Migration."
+          icon: "/assets/img/icons/train.svg"
+        - title: "Priorisierte Umsetzungsschritte"
+          text: "Klare Reihenfolge für technische und organisatorische Maßnahmen."
+          icon: "/assets/img/icons/bulb.svg"
+      cta:
+        alt: true
+        title: "Mit einer Roadmap wird Identity modernisierbar"
+        text: "Sie wissen, welche Maßnahmen zuerst kommen und welche Investitionen sich wirklich lohnen."
+    - template: "steps"
+      alt: true
+      heading: "Ablauf"
+      text: "Das Assessment ist kompakt genug für schnelle Entscheidungen und tief genug für belastbare Architekturarbeit."
+      steps:
+        - title: "Discovery Workshop"
+          text: "Wir erfassen Ziele, Rahmenbedingungen, Anwendungen und die aktuelle Betriebsrealität."
+        - title: "Architektur Review"
+          text: "Wir bewerten bestehende Systeme, Trust-Beziehungen, Benutzerquellen und Integrationsmuster."
+        - title: "Technische Analyse"
+          text: "Wir identifizieren Sicherheitslücken, Standardisierungspotenziale und Modernisierungshürden."
+        - title: "Dokumentation und Roadmap"
+          text: "Sie erhalten eine priorisierte Empfehlung für die nächsten Schritte."
+      cta:
+        title: "In kurzer Zeit zu einer belastbaren Entscheidungsgrundlage"
+        text: "Im Erstgespräch klären wir, welche Systeme und Ziele in das Assessment einbezogen werden sollten."
+  final_cta:
+    image: "/assets/img/illustrations/home/grow.svg"
+    icon: "/assets/img/icons/handshake.png"
+    title: "Jetzt Termin für ein Erstgespräch buchen"
+    text: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+  more_solutions:
+    alt: true
+    heading: "Weitere Lösungen"
+    intro: "Wenn die Zielarchitektur steht, geht der nächste Schritt häufig in die operative Umsetzung."
+    items:
+      - title: "Single Sign-On Plattform"
+        text: "Zentrale Authentifizierung für interne Systeme, Active Directory, SaaS-Tools und APIs."
+        icon: "/assets/img/icons/cap.svg"
+        link: "/sso-plattform/"
+        link_text: "Mehr erfahren"
+        link_as_button: true
+      - title: "Customer Identity Plattform"
+        text: "Skalierbare Login-Plattform für Kunden-, Partner- und Entwicklerportale."
+        icon: "/assets/img/icons/creative.svg"
+        link: "/customer-identity-plattform/"
+        link_text: "Mehr erfahren"
+        link_as_button: true
+
+sso-plattform:
+  hero:
+    kicker: "Keycloak für interne Systeme"
+    title: "Single Sign-On Plattform für interne Systeme"
+    text: "Reduzieren Sie Administrationsaufwand und erhöhen Sie Sicherheit durch eine zentrale Authentifizierungsplattform."
+  sections:
+    - template: "cards"
+      heading: "Das Problem"
+      intro: "Getrennte Logins sind nicht nur unkomfortabel, sondern auch teuer im Betrieb und riskant für die Sicherheit."
+      items:
+        - title: "Unterschiedliche Logins"
+          text: "Jedes System verwaltet eigene Zugangsdaten und eigene Anmeldeprozesse."
+          icon: "/assets/img/icons/circle.svg"
+        - title: "Passwort-Wiederverwendung"
+          text: "Benutzer vereinfachen ihren Alltag mit unsicheren Passwortmustern."
+          icon: "/assets/img/icons/star.svg"
+        - title: "Hoher Helpdesk-Aufwand"
+          text: "Passwort-Resets und Zugriffsprobleme erzeugen unnötige Supportkosten."
+          icon: "/assets/img/icons/train.svg"
+        - title: "Wenig Transparenz"
+          text: "Zugriffsregeln und Authentifizierungswege sind über mehrere Systeme verteilt."
+          icon: "/assets/img/icons/search.svg"
+      cta:
+        alt: true
+        title: "SSO reduziert Reibung in Betrieb und Support"
+        text: "Wir zeigen, wie eine zentrale Plattform die Zahl der Login-Inseln kontrolliert abbaut."
+    - template: "process"
+      alt: true
+      heading: "Die Lösung"
+      text: "Eine zentrale SSO-Plattform auf Basis von Keycloak verbindet bestehende Identitätsquellen mit internen Anwendungen, SaaS-Tools und APIs."
+      paragraph_links:
+        - prefix: "Viele Unternehmen beginnen mit einem "
+          link_text: "Identity Modernization Assessment"
+          link: "/identity-assessment/"
+          suffix: ", bevor sie ihre zentrale Login-Plattform schrittweise einführen."
+      subheading: "Typische Integrationen"
+      image: "/assets/img/illustrations/home/security.svg"
+      points:
+        - "Active Directory als bestehende Benutzerquelle"
+        - "interne Web-Applikationen und Portale"
+        - "SaaS-Tools mit modernen Authentifizierungsstandards"
+        - "interne APIs für tokenbasierte Zugriffe"
+      note: "SAML, OpenID Connect und OAuth2 schaffen die technische Grundlage für eine saubere und zukunftsfähige Integration."
+      cta:
+        title: "Standards statt proprietärer Login-Lösungen"
+        text: "Wir planen die Plattform so, dass bestehende Systeme angebunden und neue Anwendungen schneller integriert werden können."
+    - template: "cards"
+      heading: "Vorteile"
+      intro: "Eine zentrale Plattform liefert operative Entlastung und verbessert gleichzeitig Sicherheit und Steuerbarkeit."
+      items:
+        - title: "Single Sign-On"
+          text: "Weniger Passwörter, weniger Medienbrüche und bessere Nutzerakzeptanz."
+          icon: "/assets/img/icons/bulb.svg"
+        - title: "Multi-Faktor-Authentifizierung"
+          text: "MFA wird zentral eingeführt und konsistent über mehrere Anwendungen durchgesetzt."
+          icon: "/assets/img/icons/star.svg"
+        - title: "Zentrale Zugriffskontrolle"
+          text: "Policies, Sessions und Authentifizierungsflüsse werden an einer Stelle gesteuert."
+          icon: "/assets/img/icons/search.svg"
+        - title: "Einfacheres User Lifecycle Management"
+          text: "Ein- und Austritte lassen sich besser mit bestehenden Benutzerquellen verzahnen."
+          icon: "/assets/img/icons/circle.svg"
+        - title: "Mehr Sicherheitskontrolle"
+          text: "Authentifizierung wird nachvollziehbarer, standardisierter und auditfähiger."
+          icon: "/assets/img/icons/cap.svg"
+      cta:
+        alt: true
+        title: "SSO ist ein Sicherheits- und Betriebsprojekt"
+        text: "Im Erstgespräch bewerten wir, welche Anwendungen sich für einen sinnvollen Einstieg eignen."
+    - template: "steps"
+      alt: true
+      heading: "Typischer Projektumfang"
+      text: "Viele Projekte starten mit einem klar abgegrenzten Scope und werden anschließend schrittweise erweitert."
+      paragraph_links:
+        - prefix: "Wenn auch externe Nutzer sicher angebunden werden sollen, ist oft eine "
+          link_text: "Customer Identity Plattform"
+          link: "/customer-identity-plattform/"
+          suffix: " der passende nächste Baustein."
+      steps:
+        - title: "Keycloak Installation"
+          text: "Aufbau der technischen Basis in Ihrer Zielumgebung."
+        - title: "Active Directory Integration"
+          text: "Anbindung der bestehenden Benutzerquelle für interne Nutzer."
+        - title: "MFA Einrichtung"
+          text: "Definition und technische Umsetzung passender MFA-Mechanismen."
+        - title: "Integration erster Anwendungen"
+          text: "Anbindung der wichtigsten Systeme für einen kontrollierten Start."
+        - title: "Administrator Schulung"
+          text: "Übergabe von Betriebswissen, Konfiguration und Governance-Grundlagen."
+      cta:
+        title: "Planen Sie den Einstieg mit realistischem Scope"
+        text: "Wir helfen Ihnen, erste Anwendungen, Sicherheitsanforderungen und Betriebsmodell sauber festzulegen."
+  final_cta:
+    image: "/assets/img/illustrations/home/userlaptop.svg"
+    icon: "/assets/img/icons/handshake.png"
+    title: "Jetzt Termin für ein Erstgespräch buchen"
+    text: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+  more_solutions:
+    alt: true
+    heading: "Weitere Lösungen"
+    intro: "Je nach Ausgangslage ist ein vorgelagertes Assessment oder eine Plattform für externe Nutzer der logische Anschluss."
+    items:
+      - title: "Identity Modernization Assessment"
+        text: "Strukturierte Analyse Ihrer bestehenden Authentifizierungslandschaft mit Roadmap für die nächsten Schritte."
+        icon: "/assets/img/icons/search.svg"
+        link: "/identity-assessment/"
+        link_text: "Mehr erfahren"
+        link_as_button: true
+      - title: "Customer Identity Plattform"
+        text: "Login-Plattform für Kunden-, Partner- und Entwicklerportale mit standardisierter Authentifizierung."
+        icon: "/assets/img/icons/creative.svg"
+        link: "/customer-identity-plattform/"
+        link_text: "Mehr erfahren"
+        link_as_button: true
+
+customer-identity-plattform:
+  hero:
+    kicker: "Keycloak für externe Nutzer"
+    title: "Login Plattform für Kunden- und Partnerportale"
+    text: "Skalierbare Authentifizierung für externe Nutzer wie Kunden, Partner oder Entwickler."
+  sections:
+    - template: "cards"
+      heading: "Typische Anwendungsfälle"
+      intro: "Wenn externe Nutzer sicher und konsistent auf digitale Angebote zugreifen sollen, braucht es eine eigene Identity-Architektur."
+      items:
+        - title: "Kundenportale"
+          text: "Sichere Logins für Self-Service-, Vertrags- oder Serviceportale."
+          icon: "/assets/img/icons/circle.svg"
+        - title: "Partnerplattformen"
+          text: "Kontrollierter Zugriff für externe Partner, Dienstleister oder Reseller."
+          icon: "/assets/img/icons/creative.svg"
+        - title: "SaaS Anwendungen"
+          text: "Mandantenfähige Authentifizierung für Ihre eigenen digitalen Produkte."
+          icon: "/assets/img/icons/cap.svg"
+        - title: "Developer Portale"
+          text: "Registrierung und Zugriff für Entwickler, Dokumentation und API-Nutzung."
+          icon: "/assets/img/icons/search.svg"
+        - title: "API Plattformen"
+          text: "Tokenbasierte Sicherheit für Anwendungen und Integrationen."
+          icon: "/assets/img/icons/star.svg"
+      cta:
+        alt: true
+        title: "Externe Identitäten brauchen ein eigenes Plattformdenken"
+        text: "Wir zeigen, wie sich Kunden-, Partner- und Entwicklerlogins standardisiert aufbauen lassen."
+    - template: "process"
+      alt: true
+      heading: "Plattform Funktionen"
+      text: "Eine Customer Identity Plattform stellt alle wesentlichen Login- und Self-Service-Funktionen zentral bereit."
+      paragraph_links:
+        - prefix: "Viele Unternehmen beginnen mit einem "
+          link_text: "Identity Modernization Assessment"
+          link: "/identity-assessment/"
+          suffix: ", um interne und externe Identity-Anforderungen sinnvoll zu trennen."
+      subheading: "Typische Bausteine"
+      image: "/assets/img/illustrations/home/config.svg"
+      points:
+        - "Registrierung für neue Nutzer"
+        - "Login und Session-Management"
+        - "Passwort Reset und Account-Wiederherstellung"
+        - "Multi-Faktor-Authentifizierung"
+        - "OAuth2 und OpenID Connect"
+        - "API Token Authentifizierung"
+      note: "So entsteht eine Plattform, die Anwendungen entlastet und gleichzeitig ein konsistentes Login-Erlebnis schafft."
+      cta:
+        title: "Zentrale Funktionen statt individueller Login-Implementierungen"
+        text: "Wir definieren mit Ihnen, welche Funktionen für Ihr Portal heute und mittelfristig benötigt werden."
+    - template: "focus"
+      heading: "Architektur"
+      text: "Anwendungen authentifizieren Nutzer über Keycloak. Nach erfolgreicher Anmeldung erhalten Benutzer Tokens für den sicheren Zugriff auf Anwendungen und APIs."
+      paragraph_links:
+        - prefix: "Für interne Anwendungen implementieren wir häufig eine "
+          link_text: "Single Sign-On Plattform"
+          link: "/sso-plattform/"
+          suffix: ", während externe Nutzer über eine eigene Customer Identity Plattform geführt werden."
+      image: "/assets/img/illustrations/home/path.svg"
+      columns:
+        - title: "Authentifizierungsfluss"
+          lines:
+            - "Benutzer oder Partnerportal"
+            - "&darr;"
+            - "Keycloak als zentrale Login Plattform"
+            - "&darr;"
+            - "Tokens für Anwendungen und APIs"
+        - title: "Vorteile"
+          points:
+            - "standardisierte Authentifizierung für mehrere Anwendungen"
+            - "sichere API-Kommunikation mit Tokens"
+            - "konsistentes Login-Erlebnis über alle Portale"
+      cta:
+        alt: true
+        title: "Eine saubere Architektur vereinfacht Wachstum"
+        text: "Mit einer zentralen Plattform werden neue Portale, Apps und APIs schneller anschlussfähig."
+    - template: "cards"
+      alt: true
+      heading: "Business Vorteile"
+      intro: "Die Plattform ist nicht nur ein Technikthema, sondern ein Beschleuniger für digitale Produkte und externe Services."
+      items:
+        - title: "Skalierbare Authentifizierung"
+          text: "Wachsende Nutzerzahlen und neue Anwendungen lassen sich leichter abbilden."
+          icon: "/assets/img/icons/train.svg"
+        - title: "Höhere Sicherheit"
+          text: "Standards, MFA und zentrale Policies senken das Risiko inkonsistenter Eigenentwicklungen."
+          icon: "/assets/img/icons/star.svg"
+        - title: "Schnellere Entwicklung"
+          text: "Teams können neue Anwendungen bauen, ohne Login-Funktionen jedes Mal neu zu entwickeln."
+          icon: "/assets/img/icons/bulb.svg"
+        - title: "Konsistente Benutzerverwaltung"
+          text: "Nutzerprozesse werden zentralisiert und über Anwendungen hinweg einheitlich gestaltet."
+          icon: "/assets/img/icons/search.svg"
+      cta:
+        title: "Bauen Sie eine tragfähige Basis für externe Nutzer"
+        text: "Im Erstgespräch klären wir Zielgruppen, Integrationen und die passende Plattformarchitektur."
+  final_cta:
+    alt: true
+    image: "/assets/img/illustrations/home/userengagement.svg"
+    icon: "/assets/img/icons/handshake.png"
+    title: "Jetzt Termin für ein Erstgespräch buchen"
+    text: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+  more_solutions:
+    alt: true
+    heading: "Weitere Lösungen"
+    intro: "Für mittelständische IT-Landschaften greifen interne und externe Identity-Lösungen oft ineinander."
+    items:
+      - title: "Identity Modernization Assessment"
+        text: "Analyse der bestehenden Authentifizierungslandschaft mit Roadmap für eine cloudfähige Identity-Architektur."
+        icon: "/assets/img/icons/search.svg"
+        link: "/identity-assessment/"
+        link_text: "Mehr erfahren"
+        link_as_button: true
+      - title: "Single Sign-On Plattform"
+        text: "Zentrale Authentifizierung für interne Systeme mit MFA, Standards und klarer Zugriffskontrolle."
+        icon: "/assets/img/icons/cap.svg"
+        link: "/sso-plattform/"
+        link_text: "Mehr erfahren"
+        link_as_button: true

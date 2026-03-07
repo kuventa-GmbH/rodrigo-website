@@ -1,0 +1,35 @@
+{% assign brand = site.data.handwerk.site %}
+{% assign nav_items = site.data.handwerk.navigation %}
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand js-anim" data-anim="animate__fadeInDown" data-once="true" href="{{ '/' | relative_url }}">
+      <img class="brand-logo" src="{{ '/assets/img/brand/logo.png' | relative_url }}" alt="{{ brand.name }}">
+      <span class="brand-copy">
+        <span class="brand-title">{{ brand.name }}</span>
+        <span class="brand-subtitle">{{ brand.tagline }}</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Menü öffnen"
+            aria-controls="primary-nav" aria-expanded="false" id="navToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links js-anim" id="primary-nav" data-anim="animate__fadeInDown" data-once="true" aria-label="Hauptnavigation">
+      {% for item in nav_items %}
+        {% assign is_active = false %}
+        {% if page.nav_section == item.section %}
+          {% assign is_active = true %}
+        {% endif %}
+        {% if item.url == '/' and page.url == '/' %}
+          {% assign is_active = true %}
+        {% endif %}
+        <a class="nav-link {% if is_active %}is-active{% endif %}" href="{{ item.url | relative_url }}">
+          {{ item.label }}
+        </a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

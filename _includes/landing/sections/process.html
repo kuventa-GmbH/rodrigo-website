@@ -1,0 +1,36 @@
+<section class="section{% if include.section.alt %} section-alt{% endif %}">
+  <div class="container process">
+    <div class="process-art js-anim" data-anim="animate__fadeInLeft" data-once="true">
+      <img src="{{ include.section.image | relative_url }}" alt="" loading="lazy">
+    </div>
+
+    <div class="process-content js-anim" data-anim="animate__fadeInRight" data-once="true">
+      <h2 class="sec-heading">{{ include.section.heading }}</h2>
+      {% if include.section.text %}
+        <p>{{ include.section.text }}</p>
+      {% endif %}
+      {% if include.section.paragraph_links %}
+        {% for paragraph_link in include.section.paragraph_links %}
+          <p>
+            {{ paragraph_link.prefix }}
+            <a class="blog-entry-link" href="{{ paragraph_link.link | relative_url }}">{{ paragraph_link.link_text }}</a>
+            {{ paragraph_link.suffix }}
+          </p>
+        {% endfor %}
+      {% endif %}
+      {% if include.section.subheading %}
+        <h3>{{ include.section.subheading }}</h3>
+      {% endif %}
+      {% if include.section.points %}
+        <ul class="list">
+          {% for point in include.section.points %}
+            <li>{{ point }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if include.section.note %}
+        <h5>{{ include.section.note }}</h5>
+      {% endif %}
+    </div>
+  </div>
+</section>

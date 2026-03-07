@@ -1,0 +1,35 @@
+<section class="section section-alt contact-section">
+  <div class="container">
+    {% assign primary_link = site.data.home.contact.primary_btn_link %}
+    <div class="heading-img js-anim" data-anim="animate__fadeInUp" data-once="true"><img src="{{ site.data.home.contact.image | relative_url }}"></div>
+    <h2 class="sec-heading center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.heading }}</h2>
+    {% if site.data.home.contact.text %}
+      <p class="center js-anim" data-anim="animate__fadeInUp" data-once="true">{{ site.data.home.contact.text }}</p>
+    {% endif %}
+    <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <a class="btn btn-primary" href="{{ primary_link | relative_url }}">{{ site.data.home.contact.primary_btn }}</a>
+      {% if site.data.home.contact.note %}
+        <p>{{ site.data.home.contact.note }}</p>
+      {% endif %}
+    </div>
+
+    <div class="contact-widget js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <div class="contact-direct">
+        <article class="contact-direct__item">
+          <span class="contact-direct__label">E-Mail</span>
+          <span class="contact-direct__value">dennis.kuerschner@kuventa.de</span>
+          <div class="contact-direct__actions">
+            <a class="contact-direct__btn contact-direct__btn--primary" href="mailto:dennis.kuerschner@kuventa.de">E-Mail senden</a>
+          </div>
+        </article>
+        <article class="contact-direct__item">
+          <span class="contact-direct__label">Telefon</span>
+          <span class="contact-direct__value">+49 151 75 03 26 56</span>
+          <div class="contact-direct__actions">
+            <a class="contact-direct__btn contact-direct__btn--primary" href="tel:+4915175032656">Anrufen</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

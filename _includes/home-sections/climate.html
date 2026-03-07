@@ -1,0 +1,22 @@
+<section class="section">
+  <div class="climate">
+    <div class="climate-art js-anim" data-anim="animate__fadeInLeft" data-once="true">
+      <img src="{{ site.data.home.climate.image | relative_url }}" alt="" loading="lazy">
+    </div>
+
+    <div class="climate-content js-anim" data-anim="animate__fadeInRight" data-once="true">
+      <h2 class="sec-heading">{{ site.data.home.climate.heading }}</h2>
+      <p>{{ site.data.home.climate.text }}</p>
+    </div>
+  </div>
+
+    <div class="climate-cards cards cards-3 js-anim" data-anim="animate__fadeIn">
+      {% for item in site.data.home.climate.items %}
+      <div class="card">
+        <div class="card-icon"><img src="{{ item.icon | relative_url }}"></div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+</section>

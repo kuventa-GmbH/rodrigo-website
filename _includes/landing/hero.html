@@ -1,0 +1,36 @@
+<section class="section hero">
+  <div class="container">
+    {% assign booking_href = include.shared.booking_link | relative_url %}
+    {% if include.hero.image %}
+      <div class="process">
+        <div class="process-content">
+          {% if include.hero.kicker %}
+            <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">{{ include.hero.kicker }}</p>
+          {% endif %}
+          <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">{{ include.hero.title }}</h1>
+          <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">{{ include.hero.text }}</p>
+          <div class="hero-actions js-anim" data-anim="animate__fadeInUp" data-once="true">
+            <a class="btn btn-primary" href="{{ booking_href }}">{{ include.shared.cta_text }}</a>
+            <p>{{ include.shared.cta_note }}</p>
+          </div>
+        </div>
+
+        <div class="process-art js-anim" data-anim="animate__fadeInRight" data-once="true">
+          <img src="{{ include.hero.image | relative_url }}" alt="{{ include.hero.image_alt | default: '' }}" loading="eager">
+        </div>
+      </div>
+    {% else %}
+      <div class="blog-header">
+        {% if include.hero.kicker %}
+          <p class="blog-kicker js-anim" data-anim="animate__fadeInUp" data-once="true">{{ include.hero.kicker }}</p>
+        {% endif %}
+        <h1 class="hero-title js-anim" data-anim="animate__fadeInLeft" data-once="true">{{ include.hero.title }}</h1>
+        <p class="hero-text js-anim" data-anim="animate__fadeIn" data-once="true">{{ include.hero.text }}</p>
+        <div class="hero-actions center js-anim" data-anim="animate__fadeInUp" data-once="true">
+          <a class="btn btn-primary" href="{{ booking_href }}">{{ include.shared.cta_text }}</a>
+          <p>{{ include.shared.cta_note }}</p>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</section>

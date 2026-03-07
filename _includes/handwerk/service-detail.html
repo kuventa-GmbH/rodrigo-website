@@ -1,0 +1,60 @@
+{% assign service = include.service %}
+<section class="section page-hero">
+  <div class="container page-hero__inner">
+    <div class="page-hero__copy js-anim" data-anim="animate__fadeInLeft" data-once="true">
+      <p class="eyebrow">Leistung</p>
+      <h1 class="hero-title page-title">{{ service.title }}</h1>
+      <p class="hero-text page-text">{{ service.teaser }}</p>
+      {% include handwerk/contact-actions.html key="project" %}
+    </div>
+
+    <aside class="page-hero__aside js-anim" data-anim="animate__fadeInRight" data-once="true">
+      <div class="info-pill">
+        <span aria-hidden="true" data-lucide="{{ service.icon }}"></span>
+        <span>{{ service.title }}</span>
+      </div>
+      <div class="info-pill">
+        <span aria-hidden="true" data-lucide="map-pin"></span>
+        <span>Rösrath und Umgebung</span>
+      </div>
+      <div class="info-pill">
+        <span aria-hidden="true" data-lucide="sparkles"></span>
+        <span>Saubere und zuverlässige Ausführung</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container detail-shell">
+    <div class="detail-shell__main js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <p class="eyebrow">Das übernehme ich</p>
+      <h2 class="sec-heading">{{ service.title }}</h2>
+      <ul class="detail-list">
+        {% for item in service.items %}
+          <li>
+            <span aria-hidden="true" data-lucide="check"></span>
+            <span>{{ item }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <aside class="detail-shell__side js-anim" data-anim="animate__fadeInUp" data-delay="120" data-once="true">
+      <p class="eyebrow">Gut zu wissen</p>
+      <h3>{{ service.side_title }}</h3>
+      <p>{{ service.side_text }}</p>
+      <div class="detail-note">
+        <span aria-hidden="true" data-lucide="badge-check"></span>
+        <p>Ich arbeite mit klaren Absprachen, fairen Angeboten und einem persönlichen Ansprechpartner vor Ort.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+{% include handwerk/contact-band.html
+  kicker="Kontakt"
+  title="Projekt kurz besprechen?"
+  text="Wenn Sie schon eine Idee oder erste Maße haben, schreiben Sie mir einfach. Gemeinsam schauen wir, was sinnvoll ist."
+  actions_key="project"
+%}

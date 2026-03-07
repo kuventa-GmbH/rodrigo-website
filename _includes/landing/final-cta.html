@@ -1,0 +1,17 @@
+<section class="section{% if include.final.alt %} section-alt{% endif %}">
+  <div class="container cta">
+    {% assign booking_href = include.shared.booking_link | relative_url %}
+    <div class="cta-img js-anim" data-anim="animate__fadeIn" data-once="true">
+      <img src="{{ include.final.image | relative_url }}" alt="" loading="lazy">
+    </div>
+    <div class="cta-content js-anim" data-anim="animate__fadeInRight" data-once="true">
+      <img src="{{ include.final.icon | relative_url }}" alt="" loading="lazy">
+      <h2>{{ include.final.title }}</h2>
+      <p>{{ include.final.text }}</p>
+      <a class="btn btn-primary" href="{{ booking_href }}">{{ include.shared.cta_text }}</a>
+      {% if include.final.show_note_below %}
+        <p>{{ include.shared.cta_note }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>

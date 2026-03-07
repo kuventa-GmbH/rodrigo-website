@@ -1,0 +1,129 @@
+hero:
+  kicker: "Spezialisiertes Consulting für den Mittelstand"
+  title: "Identity Modernisierung für cloudfähige IT-Landschaften"
+  text: "kuventa plant und implementiert zentrale Identity-Plattformen auf Basis von Keycloak. Wir modernisieren gewachsene On-Premise-Umgebungen, führen Single Sign-On und Multi-Faktor-Authentifizierung ein und schaffen eine tragfähige Grundlage für Cloud-Services, Portale und APIs."
+  image: "/assets/img/illustrations/home/path.svg"
+  image_alt: "Illustration einer modernen Identity-Architektur"
+
+why:
+  image: "/assets/img/icons/thumb.svg"
+  heading: "Warum Unternehmen mit kuventa arbeiten"
+  items:
+    - title: "Identity als Plattform"
+      text: "Wir betrachten Authentifizierung nicht als Einzellösung, sondern als zentrale Plattform für interne Anwendungen, APIs, Portale und künftige Cloud-Services."
+      icon: "/assets/img/icons/bulb.svg"
+    - title: "Keycloak mit Architekturblick"
+      text: "Der Schwerpunkt liegt auf modernen Identity-Architekturen mit Keycloak, OpenID Connect, OAuth2 und SAML für hybride Unternehmenslandschaften."
+      icon: "/assets/img/icons/cap.svg"
+    - title: "Modernisierung statt Big Bang"
+      text: "Bestehende Verzeichnisdienste, Legacy-Anwendungen und neue Cloud-Dienste werden schrittweise in ein belastbares Zielbild überführt."
+      icon: "/assets/img/icons/creative.svg"
+    - title: "Beratung und Umsetzung"
+      text: "Von Assessment und Zielarchitektur bis zur Implementierung begleiten wir Vorhaben technisch und pragmatisch."
+      icon: "/assets/img/icons/circle.svg"
+
+services:
+  heading: "Leistungen"
+  blocks:
+    - title: "Identity Modernisierung"
+      points:
+        - "Zielbild für cloudfähige Identity-Architekturen"
+        - "Modernisierung historisch gewachsener Authentifizierungslandschaften"
+        - "Roadmap für On-Premise-, Hybrid- und Cloud-Szenarien"
+      icon: "/assets/img/icons/bulb.svg"
+      link: "/identity-modernisierung/"
+      link_text: "Leistung ansehen"
+    - title: "Identity Assessment"
+      points:
+        - "Analyse der bestehenden Identity- und Authentifizierungslandschaft"
+        - "Bewertung von SSO, MFA, Integrationen und Sicherheitsniveau"
+        - "Priorisierte Roadmap für die nächsten Umsetzungsschritte"
+      icon: "/assets/img/icons/search.svg"
+      link: "/identity-assessment/"
+      link_text: "Leistung ansehen"
+    - title: "SSO Plattform"
+      points:
+        - "Zentrale Authentifizierung für interne Anwendungen und Portale"
+        - "Anbindung von Active Directory, SaaS und hybriden Umgebungen"
+        - "Konsistente Login-Flows und zentrale MFA-Steuerung"
+      icon: "/assets/img/icons/cap.svg"
+      link: "/sso-plattform/"
+      link_text: "Leistung ansehen"
+    - title: "Customer Identity Plattform"
+      points:
+        - "Login-Plattform für Kunden-, Partner- und Entwicklerportale"
+        - "Self-Service, Registrierungs- und Wiederherstellungsprozesse"
+        - "Tokenbasierte Sicherheit für Anwendungen und APIs"
+      icon: "/assets/img/icons/creative.svg"
+      link: "/customer-identity-plattform/"
+      link_text: "Leistung ansehen"
+
+process:
+  heading: "Typische Ausgangslagen"
+  text: "Viele Vorhaben starten nicht auf der grünen Wiese, sondern mit gewachsenen Verzeichnisdiensten, Legacy-Anwendungen und zunehmendem Cloud-Druck."
+  sub-heading: "Wann wir typischerweise hinzugezogen werden"
+  sub-text1:
+    - "Mehrere Logins, verteilt gepflegte Benutzerkonten und fehlende Transparenz"
+    - "Geplante SaaS- oder Cloud-Integrationen ohne passende Identity-Architektur"
+    - "Uneinheitliche MFA und steigende Anforderungen aus Security und Audit"
+    - "Neue Portale oder APIs, die moderne Authentifizierungsstandards benötigen"
+  sub-text2: "Ziel ist eine zentrale Identity-Plattform, die Betrieb vereinfacht und künftige Architekturentscheidungen unterstützt."
+  image: "/assets/img/illustrations/home/path.svg"
+  primary_btn: "Jetzt Termin buchen"
+  primary_btn_link: "/kontakt/"
+  primary_note: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"
+
+benefits:
+  heading: "Vertrauen für komplexe IT-Umgebungen"
+  cards:
+    - title: "Erfahrung in Enterprise-IT"
+      points:
+        - "Projekte in komplexen und heterogenen IT-Landschaften"
+        - "Verständnis für regulierte und sicherheitskritische Umgebungen"
+        - "Arbeit mit Fachbereichen, Infrastruktur und Security"
+      text: "kuventa begleitet Identity-Vorhaben in Unternehmen mit gewachsenen Systemlandschaften, kritischen Anwendungen und hohem Integrationsbedarf."
+      image: "/assets/img/illustrations/home/folders.svg"
+    - title: "Technische Tiefe in Identity-Architektur"
+      points:
+        - "Keycloak als zentrale Identity Plattform"
+        - "OpenID Connect, OAuth2 und SAML"
+        - "Anbindung von AD, LDAP, SaaS und APIs"
+      text: "Der Fokus liegt auf tragfähigen Zielarchitekturen, nicht auf isolierten Tool-Einführungen."
+      image: "/assets/img/illustrations/home/userlaptop.svg"
+    - title: "Umsetzungsstärke zwischen Architektur und Implementierung"
+      points:
+        - "Assessment und Zielbild"
+        - "Integrationskonzepte und technische Umsetzung"
+        - "Betriebsnahe Einführung und Wissenstransfer"
+      text: "Beratung und Implementierung sind aufeinander abgestimmt, damit Entscheidungen nicht in PowerPoint enden."
+      image: "/assets/img/illustrations/home/process.svg"
+    - title: "Pragmatische Modernisierung"
+      points:
+        - "Schrittweise Migration statt Big Bang"
+        - "Berücksichtigung bestehender Systeme und Betriebsrealität"
+        - "Klare Priorisierung nach Nutzen und Umsetzbarkeit"
+      text: "Moderne Identity entsteht dort, wo heutige Systeme sauber mit künftigen Cloud- und API-Anforderungen verbunden werden."
+      image: "/assets/img/illustrations/home/security.svg"
+
+climate:
+  heading: "Für welche Umgebungen wir arbeiten"
+  text: "Die meisten Vorhaben entstehen dort, wo bestehende IT-Landschaften modernisiert und auf zukünftige Cloud-Architekturen vorbereitet werden."
+  image: "/assets/img/illustrations/home/userengagement.svg"
+  items:
+    - title: "Interne Unternehmensanwendungen"
+      text: "Zentrale Authentifizierung, SSO und MFA für interne Web-Anwendungen, Portale und fachliche Plattformen."
+      icon: "/assets/img/icons/leaf.svg"
+    - title: "Hybride IT-Landschaften"
+      text: "Anbindung von Active Directory, LDAP, Legacy-Systemen, SaaS-Anwendungen und neuen Cloud-Diensten."
+      icon: "/assets/img/icons/train.svg"
+    - title: "Kunden-, Partner- und API-Plattformen"
+      text: "Identity-Lösungen für externe Nutzer, Self-Service-Prozesse und tokenbasierte Sicherheit für APIs."
+      icon: "/assets/img/icons/search.svg"
+
+contact:
+  image: "/assets/img/icons/blue-bulb.svg"
+  heading: "Jetzt Termin buchen"
+  text: "In einem kostenlosen Erstgespräch besprechen wir Ihre Ausgangslage, den Modernisierungsbedarf und mögliche nächste Schritte."
+  primary_btn: "Jetzt Termin buchen"
+  primary_btn_link: "/kontakt/"
+  note: "Kostenloses Erstgespräch • 30 Minuten • unverbindlich"

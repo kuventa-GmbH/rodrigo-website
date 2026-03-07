@@ -1,0 +1,39 @@
+{% assign services = include.services | default: site.data.handwerk.services %}
+<section class="section{% if include.alt %} section-alt{% endif %}">
+  <div class="container">
+    {% if include.kicker or include.heading or include.text %}
+      <div class="section-intro section-intro--center js-anim" data-anim="animate__fadeInUp" data-once="true">
+        {% if include.kicker %}
+          <p class="eyebrow">{{ include.kicker }}</p>
+        {% endif %}
+        {% if include.heading %}
+          <h2 class="sec-heading">{{ include.heading }}</h2>
+        {% endif %}
+        {% if include.text %}
+          <p>{{ include.text }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="service-grid">
+      {% for service in services %}
+        <article class="service-card js-anim" data-anim="animate__fadeInUp" data-once="true">
+          <div class="service-card__icon" aria-hidden="true">
+            <span data-lucide="{{ service.icon }}"></span>
+          </div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.teaser }}</p>
+          <ul class="service-card__list">
+            {% for item in service.items %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+          <a class="text-link" href="{{ service.url | relative_url }}">
+            <span>Mehr erfahren</span>
+            <span aria-hidden="true" data-lucide="arrow-right"></span>
+          </a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

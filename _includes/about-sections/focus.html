@@ -1,0 +1,25 @@
+<section class="section">
+  <div class="container">
+   
+
+    <div class="focus-grid">
+      <div class="focus-art js-anim" data-anim="animate__fadeInLeft">
+        <img src="{{ site.data.about.focus.image | relative_url }}" alt="" loading="lazy">
+      </div>
+
+      <div class="focus-cols js-anim" data-anim="animate__fadeInRight">
+         <h2 class="sec-heading">{{ site.data.about.focus.heading }}</h2>
+        {% for col in site.data.about.focus.columns %}
+        <div class="focus-col">
+          <h3 class="linkish">{{ col.title }}</h3>
+          <ul class="bullets">
+            {% for p in col.points %}
+              <li>{{ p }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

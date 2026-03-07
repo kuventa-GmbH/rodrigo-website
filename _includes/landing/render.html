@@ -1,0 +1,29 @@
+{% assign shared = site.data.landing_pages.shared %}
+{% assign landing = site.data.landing_pages[page.landing_key] %}
+
+{% if landing %}
+  {% include landing/hero.html hero=landing.hero shared=shared %}
+
+  {% for section in landing.sections %}
+    {% case section.template %}
+      {% when "cards" %}
+        {% include landing/sections/cards.html section=section %}
+      {% when "process" %}
+        {% include landing/sections/process.html section=section %}
+      {% when "focus" %}
+        {% include landing/sections/focus.html section=section %}
+      {% when "steps" %}
+        {% include landing/sections/steps.html section=section %}
+    {% endcase %}
+
+    {% if section.cta %}
+      {% include landing/cta-block.html block=section.cta shared=shared %}
+    {% endif %}
+  {% endfor %}
+
+  {% if landing.more_solutions %}
+    {% include landing/sections/cards.html section=landing.more_solutions %}
+  {% endif %}
+
+  {% include landing/final-cta.html final=landing.final_cta shared=shared %}
+{% endif %}

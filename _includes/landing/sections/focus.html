@@ -1,0 +1,46 @@
+<section class="section{% if include.section.alt %} section-alt{% endif %}">
+  <div class="container">
+    <div class="focus-grid">
+      <div class="focus-art js-anim" data-anim="animate__fadeInLeft" data-once="true">
+        <img src="{{ include.section.image | relative_url }}" alt="" loading="lazy">
+      </div>
+
+      <div class="focus-cols js-anim" data-anim="animate__fadeInRight" data-once="true">
+        <h2 class="sec-heading">{{ include.section.heading }}</h2>
+        {% if include.section.text %}
+          <p>{{ include.section.text }}</p>
+        {% endif %}
+        {% if include.section.paragraph_links %}
+          {% for paragraph_link in include.section.paragraph_links %}
+            <p>
+              {{ paragraph_link.prefix }}
+              <a class="blog-entry-link" href="{{ paragraph_link.link | relative_url }}">{{ paragraph_link.link_text }}</a>
+              {{ paragraph_link.suffix }}
+            </p>
+          {% endfor %}
+        {% endif %}
+
+        {% for column in include.section.columns %}
+          <div class="focus-col">
+            <h3 class="linkish">{{ column.title }}</h3>
+            {% if column.text %}
+              <p>{{ column.text }}</p>
+            {% endif %}
+            {% if column.points %}
+              <ul class="bullets">
+                {% for point in column.points %}
+                  <li>{{ point }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+            {% if column.lines %}
+              {% for line in column.lines %}
+                <p>{{ line }}</p>
+              {% endfor %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

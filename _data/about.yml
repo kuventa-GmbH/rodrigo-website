@@ -1,0 +1,104 @@
+hero:
+  image: "/assets/img/photos/about/hero.webp"
+
+intro:
+  title: "Kreativer IAM- & Security-Experte"
+  text: "Mein Name ist Dennis Kürschner, ich komme aus Hamburg und bin ein erfahrener IAM & Security Engineer mit einem kreativen und lösungsbasierten Ansatz für jede technische Herausforderung. "
+  text2: "Mit langjähriger Erfahrung in Identity & Access Management (IAM), IT-Security, Automatisierung und Softwareentwicklung unterstütze ich Unternehmen bei der sicheren Verwaltung von Identitäten und Zugriffsrechten."
+  button_text: "Download CV"
+  button_link: "/assets/files/cv.pdf"
+  button_download: true
+  button_download_filename: "Dennis-Kuerschner-CV.pdf"
+
+focus:
+  heading: "Fachliche Schwerpunkte"
+  image: "/assets/img/illustrations/about/user.svg"
+  columns:
+    - title: "Identity & Access Management (IAM)"
+      points:
+        - "Onboarding/Offboarding und Lifecycle"
+        - "Active Directory / Entra ID / ADFS"
+        - "Rollen- & Berechtigungskonzepte"
+        - "Automatisierung (PowerShell, Workflows)"
+    - title: "Security & Compliance"
+      points:
+        - "Policies, Kontrollen, Audit-Readiness"
+        - "Rezertifizierung, SoD, Governance"
+        - "Risikobewertung und Hardening"
+    - title: "Softwareentwicklung & DevOps"
+      points:
+        - "CI/CD, GitHub, Azure DevOps"
+        - "Scripting & Automatisierung"
+        - "Infrastruktur als Code"
+
+experience:
+  heading: "Berufliche Erfahrung"
+  items:
+    - company: "dmTECH GmbH"
+      role: "IAM Engineer"
+      date: "seit 02/2024"
+      bullets:
+        - "Einführung und Weiterentwicklung von IAM-Prozessen"
+        - "Umsetzung von Access Governance und Rezertifizierung"
+    - company: "Versicherungskonzern"
+      role: "IAM Engineer"
+      date: "seit 11/2023"
+      bullets:
+        - "Entwicklung von Schnittstellen und Workflows"
+        - "Optimierung von Rollen- & Berechtigungsmodellen"
+    - company: "Münchener Rückversicherungsgesellschaft AG"
+      role: "IAM Engineer"
+      date: "01/2023 bis 06/2023"
+      bullets:
+        - "Analyse und Design von IAM-Lösungen"
+        - "Automatisierung und Prozessverbesserung"
+    - company: "SERGO GmbH"
+      role: "Software Architect"
+      date: "09/2022 bis 12/2022"
+      highlight: true
+      bullets:
+        - "Prozess- und Schnittstellen-Design"
+        - "Umsetzung von Automatisierungen"
+
+education:
+  heading: "Ausbildung & Zertifikate"
+  cards:
+    - date: "08/2016 bis 07/2019"
+      icon: "/assets/img/icons/star.svg"
+      title: "Fachinformatiker für Anwendungsentwicklung"
+      org: "GDI Hesse Unternehmerverband GmbH"
+    - date: ""
+      icon: "/assets/img/icons/star.svg"
+      title: "Certified Scrum Master (CSM)"
+      org: "Scrum Alliance"
+
+skills:
+  heading: "Technische Skills & Tools"
+  blocks:
+    - title: "Programmiersprachen"
+      icon: "/assets/img/illustrations/about/code.svg"
+      points: ["C#", ".NET", "PowerShell", "SQL", "JavaScript"]
+    - title: "IAM & Security Tools"
+      icon: "/assets/img/illustrations/about/security.svg"
+      points: ["Entra ID", "Active Directory", "SAP", "IGA Tools", "SIEM Basics"]
+    - title: "DevOps & Cloud"
+      icon: "/assets/img/illustrations/about/cicd.svg"
+      points: ["Git", "Azure DevOps", "CI/CD", "Docker Basics"]
+
+languages:
+  heading: "Sprachkenntnisse"
+  items:
+    - name: "Deutsch"
+      level: "Muttersprache"
+    - name: "Englisch"
+      level: "Fortgeschritten"
+    - name: "Spanisch"
+      level: "Grundkenntnisse"
+
+cta:
+  image: "/assets/img/photos/about/dennis.webp"
+  icon: "/assets/img/icons/handshake.png"
+  title: "Lassen Sie uns zusammenarbeiten!"
+  text: "Benötigen Sie Unterstützung bei der Optimierung Ihrer IAM-Sicherheit, der Entwicklung einer maßgeschneiderten IAM-Lösung oder einer sicheren Identitätsverwaltung? Ich bin Ihr Ansprechpartner für technisch anspruchsvolle und innovative Security-Projekte."
+  button_text: "Jetzt kontaktieren"
+  button_link: "/kontakt/"

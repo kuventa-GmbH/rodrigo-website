@@ -1,0 +1,33 @@
+<section class="section section-alt">
+  <div class="container process">
+    {% assign primary_link = site.data.home.process.primary_btn_link %}
+
+    <!-- Illustration -->
+    <div class="process-art js-anim" data-anim="animate__fadeInLeft">
+      <img src="{{ site.data.home.process.image | relative_url }}" alt="" loading="lazy">
+    </div>
+
+    <!-- Content -->
+    <div class="process-content js-anim" data-anim="animate__fadeInRight" >
+      <h2 class="sec-heading">{{ site.data.home.process.heading }}</h2>
+      <p>{{ site.data.home.process.text }}</p>
+      <h3>{{ site.data.home.process.sub-heading  }}</h3>
+      <ul class="list">
+        {% for s in site.data.home.process.sub-text1 %}
+          <li>{{ s }}</li>
+        {% endfor %}
+      </ul>
+      <h5>{{ site.data.home.process.sub-text2  }}</h5>
+
+      <a href="{{ primary_link | relative_url }}"
+         class="btn btn-primary">
+         {{ site.data.home.process.primary_btn }}
+      </a>
+      {% if site.data.home.process.primary_note %}
+        <p>{{ site.data.home.process.primary_note }}</p>
+      {% endif %}
+    </div>
+
+
+  </div>
+</section>

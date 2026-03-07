@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<article class="blog-post section">
+  <div class="container">
+    <nav class="breadcrumb js-anim" data-anim="animate__fadeIn" data-once="true" aria-label="Breadcrumb">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <span>/</span>
+      <a href="{{ '/blog/' | relative_url }}">Insights</a>
+      <span>/</span>
+      <span aria-current="page">{{ page.title }}</span>
+    </nav>
+
+    <figure class="blog-hero-media js-anim" data-anim="animate__fadeIn" data-once="true">
+      <img
+        src="{{ page.hero_image | default: '/assets/img/blog/professional-reviewing-documents-and-laptop-in-an.png' | relative_url }}"
+        alt="{{ page.hero_alt | default: page.title }}"
+        loading="lazy" />
+    </figure>
+
+    <header class="blog-post-header js-anim" data-anim="animate__fadeInUp" data-once="true">
+      <p class="blog-kicker">Wissensbeitrag</p>
+      <p class="blog-date">{{ page.date | date: "%d.%m.%Y" }}</p>
+      <h1 class="sec-heading">{{ page.title }}</h1>
+    </header>
+    <div class="blog-post-content">
+      {{ content }}
+    </div>
+    <a class="btn btn-secondary" href="{{ '/blog/' | relative_url }}">Zurück zu Insights</a>
+  </div>
+</article>

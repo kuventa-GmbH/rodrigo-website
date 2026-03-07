@@ -1,0 +1,45 @@
+<section class="section{% if include.section.alt %} section-alt{% endif %}">
+  <div class="container center js-anim" data-anim="animate__fadeInUp" data-once="true">
+    <div class="blog-header">
+      <h2 class="sec-heading">{{ include.section.heading }}</h2>
+      {% if include.section.intro %}
+        <p>{{ include.section.intro }}</p>
+      {% endif %}
+      {% if include.section.paragraph_links %}
+        {% for paragraph_link in include.section.paragraph_links %}
+          <p>
+            {{ paragraph_link.prefix }}
+            <a class="blog-entry-link" href="{{ paragraph_link.link | relative_url }}">{{ paragraph_link.link_text }}</a>
+            {{ paragraph_link.suffix }}
+          </p>
+        {% endfor %}
+      {% endif %}
+    </div>
+
+    <div class="cards cards-3">
+      {% for item in include.section.items %}
+        <div class="card">
+          <div class="card-icon"><img src="{{ item.icon | relative_url }}" alt="" loading="lazy"></div>
+          <h3>{{ item.title }}</h3>
+          {% if item.text %}
+            <p>{{ item.text }}</p>
+          {% endif %}
+          {% if item.points %}
+            <ul class="list">
+              {% for point in item.points %}
+                <li>{{ point }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% if item.link %}
+            {% if item.link_as_button %}
+              <a class="btn btn-secondary" href="{{ item.link | relative_url }}">{{ item.link_text | default: "Mehr erfahren" }}</a>
+            {% else %}
+              <a class="blog-entry-link" href="{{ item.link | relative_url }}">{{ item.link_text | default: "Mehr erfahren" }}</a>
+            {% endif %}
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

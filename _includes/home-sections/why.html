@@ -1,0 +1,16 @@
+<section class="section why-section">
+  <div class="container center js-anim" data-anim="animate__fadeIn" data-once="true">
+    <div class="heading-img"><img src="{{ site.data.home.why.image | relative_url }}"></div>
+    <h2 class="sec-heading" >{{ site.data.home.why.heading }}</h2>
+
+    <div class="cards cards-3">
+      {% for item in site.data.home.why.items %}
+      <div class="card">
+        <div class="card-icon"><img src="{{ item.icon | relative_url }}"></div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

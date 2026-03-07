@@ -1,0 +1,15 @@
+<section class="section">
+  <div class="container">
+    <div class="lang-content">
+      <h2 class="sec-heading js-anim" data-anim="animate__fadeInLeft">{{ site.data.about.languages.heading }}</h2>
+      <div class="lang-list js-anim" data-anim="animate__fadeInRight">        
+        {% for l in site.data.about.languages.items %}
+        <div class="lang-item">
+          <div class="lang-name">{{ l.name }}</div>
+          <div class="lang-level">{{ l.level }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

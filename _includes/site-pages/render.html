@@ -1,0 +1,18 @@
+{%- assign shared = site.data.landing_pages.shared -%}
+{%- assign content_page = site.data.site_pages[page.page_key] -%}
+{%- if content_page -%}
+{% include landing/hero.html hero=content_page.hero shared=shared %}
+{%- for section in content_page.sections -%}
+{%- case section.template -%}
+{%- when "cards" -%}
+{% include landing/sections/cards.html section=section %}
+{%- when "process" -%}
+{% include landing/sections/process.html section=section %}
+{%- when "focus" -%}
+{% include landing/sections/focus.html section=section %}
+{%- when "steps" -%}
+{% include landing/sections/steps.html section=section %}
+{%- endcase -%}
+{%- endfor -%}
+{% include landing/final-cta.html final=content_page.final_cta shared=shared %}
+{%- endif -%}

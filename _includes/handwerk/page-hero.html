@@ -1,0 +1,25 @@
+{% assign hero = include.hero %}
+<section class="section page-hero">
+  <div class="container page-hero__inner">
+    <div class="page-hero__copy js-anim" data-anim="animate__fadeInLeft" data-once="true">
+      {% if hero.kicker %}
+        <p class="eyebrow">{{ hero.kicker }}</p>
+      {% endif %}
+      <h1 class="hero-title page-title">{{ hero.title }}</h1>
+      {% if hero.text %}
+        <p class="hero-text page-text">{{ hero.text }}</p>
+      {% endif %}
+    </div>
+
+    {% if hero.badges %}
+      <aside class="page-hero__aside js-anim" data-anim="animate__fadeInRight" data-once="true">
+        {% for badge in hero.badges %}
+          <div class="info-pill">
+            <span aria-hidden="true" data-lucide="{{ badge.icon }}"></span>
+            <span>{{ badge.label }}</span>
+          </div>
+        {% endfor %}
+      </aside>
+    {% endif %}
+  </div>
+</section>
