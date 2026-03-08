@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-{% include components/gallery/project-detail.html project=page.project %}
+{% assign project = page.project %}
+{% if project == nil and page.project_slug %}
+  {% assign project = site.data.gallery_projects | where: "slug", page.project_slug | first %}
+{% endif %}
+{% include components/gallery/project-detail.html project=project %}
 
 {% include handwerk/contact-band.html
   kicker="Kontakt"

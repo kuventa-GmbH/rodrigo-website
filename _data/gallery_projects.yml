@@ -1,0 +1,233 @@
+---
+- slug: balkon-ausbau
+  url: "/galerie/balkon-ausbau/"
+  title: Balkonausbau
+  description: Hier wurde ein Balkon sauber weiter ausgebaut und an die vorhandene
+    Situation angepasst. Wichtig war eine ordentliche, praktische Lösung, die zum
+    Haus passt.
+  category: Außenbereich
+  category_slug: aussenbereich
+  icon: hammer
+  image_count: 1
+  image_count_label: 1 Bild
+  cover_image: "/assets/img/galerie/balkon-ausbau/balkon-ausbau-01.jpeg"
+  cover_alt: Ausgebauter Balkon am Haus in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/balkon-ausbau/balkon-ausbau-01.jpeg"
+    alt: Ausgebauter Balkon am Haus in Rösrath Bild 1
+- slug: dachgeschoss-ausbau
+  url: "/galerie/dachgeschoss-ausbau/"
+  title: Dachgeschossausbau
+  description: Beim Dachgeschossausbau ging es um eine saubere handwerkliche Umsetzung
+    mit stimmigen Details. So ist zusätzlicher Wohnraum entstanden, der sich direkt
+    gut nutzen lässt.
+  category: Renovierung
+  category_slug: renovierung
+  icon: hammer
+  image_count: 2
+  image_count_label: 2 Bilder
+  cover_image: "/assets/img/galerie/dachgeschoss-ausbau/dachgeschoss-ausbau-01.jpeg"
+  cover_alt: Ausgebautes Dachgeschoss in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/dachgeschoss-ausbau/dachgeschoss-ausbau-01.jpeg"
+    alt: Ausgebautes Dachgeschoss in Rösrath Bild 1
+  - src: "/assets/img/galerie/dachgeschoss-ausbau/dachgeschoss-ausbau-02.jpeg"
+    alt: Ausgebautes Dachgeschoss in Rösrath Bild 2
+- slug: einfahrt
+  url: "/galerie/einfahrt/"
+  title: Einfahrt neu gestaltet
+  description: Diese Einfahrt wurde neu aufgebaut und klar gegliedert. Das Ergebnis
+    wirkt ordentlich, robust und passt gut zum Eingangsbereich.
+  category: Außenbereich
+  category_slug: aussenbereich
+  icon: hammer
+  image_count: 3
+  image_count_label: 3 Bilder
+  cover_image: "/assets/img/galerie/einfahrt/einfahrt-01.jpeg"
+  cover_alt: Neu gestaltete Einfahrt in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/einfahrt/einfahrt-01.jpeg"
+    alt: Neu gestaltete Einfahrt in Rösrath Bild 1
+  - src: "/assets/img/galerie/einfahrt/einfahrt-02.jpeg"
+    alt: Neu gestaltete Einfahrt in Rösrath Bild 2
+  - src: "/assets/img/galerie/einfahrt/einfahrt-03.jpeg"
+    alt: Neu gestaltete Einfahrt in Rösrath Bild 3
+- slug: eingang-gepflastert
+  url: "/galerie/eingang-gepflastert/"
+  title: Eingangsbereich gepflastert
+  description: Hier wurde der Eingangsbereich neu gepflastert und sauber eingefasst.
+    Dadurch wirkt der Zugang zum Haus deutlich aufgeräumter und einladender.
+  category: Außenbereich
+  category_slug: aussenbereich
+  icon: hammer
+  image_count: 1
+  image_count_label: 1 Bild
+  cover_image: "/assets/img/galerie/eingang-gepflastert/eingang-gepflastert-01.jpeg"
+  cover_alt: Gepflasterter Eingangsbereich in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/eingang-gepflastert/eingang-gepflastert-01.jpeg"
+    alt: Gepflasterter Eingangsbereich in Rösrath Bild 1
+- slug: eingangstuer-einbau
+  url: "/galerie/eingangstuer-einbau/"
+  title: Eingangstür eingebaut
+  description: Die Eingangstür wurde passend eingebaut und sauber angeschlossen. So
+    sitzt alles ordentlich und der Eingangsbereich wirkt direkt stimmiger.
+  category: Außenbereich
+  category_slug: aussenbereich
+  icon: hammer
+  image_count: 2
+  image_count_label: 2 Bilder
+  cover_image: "/assets/img/galerie/eingangstuer-einbau/eingangstuer-einbau-01.jpeg"
+  cover_alt: Neu eingebaute Eingangstür in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/eingangstuer-einbau/eingangstuer-einbau-01.jpeg"
+    alt: Neu eingebaute Eingangstür in Rösrath Bild 1
+  - src: "/assets/img/galerie/eingangstuer-einbau/eingangstuer-einbau-02.jpeg"
+    alt: Neu eingebaute Eingangstür in Rösrath Bild 2
+- slug: fassade-gemalt
+  url: "/galerie/fassade-gemalt/"
+  title: Fassade frisch gestrichen
+  description: Bei diesem Projekt wurde die Fassade frisch gestrichen und sauber aufgearbeitet.
+    Das Haus hat dadurch wieder einen gepflegten und freundlichen Eindruck.
+  category: Renovierung
+  category_slug: renovierung
+  icon: hammer
+  image_count: 1
+  image_count_label: 1 Bild
+  cover_image: "/assets/img/galerie/fassade-gemalt/fassade-gemalt-01.jpeg"
+  cover_alt: Frisch gestrichene Fassade in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/fassade-gemalt/fassade-gemalt-01.jpeg"
+    alt: Frisch gestrichene Fassade in Rösrath Bild 1
+- slug: glasdach
+  url: "/galerie/glasdach/"
+  title: Glasdach montiert
+  description: Hier wurde ein Glasdach montiert und sauber in den Bestand eingebunden.
+    So entsteht ein geschützter Bereich mit einer leichten, offenen Wirkung.
+  category: Außenbereich
+  category_slug: aussenbereich
+  icon: hammer
+  image_count: 1
+  image_count_label: 1 Bild
+  cover_image: "/assets/img/galerie/glasdach/glasdach-01.jpeg"
+  cover_alt: Montiertes Glasdach an einem Haus in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/glasdach/glasdach-01.jpeg"
+    alt: Montiertes Glasdach an einem Haus in Rösrath Bild 1
+- slug: hauseingangstuer-einbau
+  url: "/galerie/hauseingangstuer-einbau/"
+  title: Hauseingangstür eingebaut
+  description: Die Hauseingangstür wurde erneuert und ordentlich eingebaut. Neben
+    der Optik spielt hier natürlich auch ein sauberer Abschluss rund um den Eingang
+    eine große Rolle.
+  category: Außenbereich
+  category_slug: aussenbereich
+  icon: hammer
+  image_count: 1
+  image_count_label: 1 Bild
+  cover_image: "/assets/img/galerie/hauseingangstuer-einbau/hauseingangstuer-einbau-01.jpeg"
+  cover_alt: Neu eingebaute Hauseingangstür in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/hauseingangstuer-einbau/hauseingangstuer-einbau-01.jpeg"
+    alt: Neu eingebaute Hauseingangstür in Rösrath Bild 1
+- slug: parkett-fussleisten-tuer
+  url: "/galerie/parkett-fussleisten-tuer/"
+  title: Parkett mit Fußleisten und Türabschluss
+  description: Hier kamen Parkett, passende Fußleisten und ein sauberer Türabschluss
+    zusammen. Gerade diese Details sorgen am Ende dafür, dass der Raum ordentlich
+    und fertig wirkt.
+  category: Böden
+  category_slug: boeden
+  icon: hammer
+  image_count: 3
+  image_count_label: 3 Bilder
+  cover_image: "/assets/img/galerie/parkett-fussleisten-tuer/parkett-fussleisten-tuer-01.jpeg"
+  cover_alt: Parkett mit Fußleisten und Türabschluss in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/parkett-fussleisten-tuer/parkett-fussleisten-tuer-01.jpeg"
+    alt: Parkett mit Fußleisten und Türabschluss in Rösrath Bild 1
+  - src: "/assets/img/galerie/parkett-fussleisten-tuer/parkett-fussleisten-tuer-02.jpeg"
+    alt: Parkett mit Fußleisten und Türabschluss in Rösrath Bild 2
+  - src: "/assets/img/galerie/parkett-fussleisten-tuer/parkett-fussleisten-tuer-03.jpeg"
+    alt: Parkett mit Fußleisten und Türabschluss in Rösrath Bild 3
+- slug: parkett-verlegen
+  url: "/galerie/parkett-verlegen/"
+  title: Parkett sauber verlegt
+  description: In diesem Raum wurde ein neuer Parkettboden verlegt und sauber angepasst.
+    Das Ergebnis bringt Ruhe in den Raum und passt gut zu einem wohnlichen Gesamtbild.
+  category: Böden
+  category_slug: boeden
+  icon: hammer
+  image_count: 1
+  image_count_label: 1 Bild
+  cover_image: "/assets/img/galerie/parkett-verlegen/parkett-verlegen-01.jpeg"
+  cover_alt: Verlegter Parkettboden in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/parkett-verlegen/parkett-verlegen-01.jpeg"
+    alt: Verlegter Parkettboden in Rösrath Bild 1
+- slug: pflasterweg
+  url: "/galerie/pflasterweg/"
+  title: Pflasterweg angelegt
+  description: Der Weg wurde neu gepflastert und klar geführt. So ist ein praktischer
+    und zugleich sauber wirkender Außenbereich entstanden.
+  category: Außenbereich
+  category_slug: aussenbereich
+  icon: hammer
+  image_count: 2
+  image_count_label: 2 Bilder
+  cover_image: "/assets/img/galerie/pflasterweg/pflasterweg-01.jpeg"
+  cover_alt: Neu gepflasterter Weg in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/pflasterweg/pflasterweg-01.jpeg"
+    alt: Neu gepflasterter Weg in Rösrath Bild 1
+  - src: "/assets/img/galerie/pflasterweg/pflasterweg-02.jpeg"
+    alt: Neu gepflasterter Weg in Rösrath Bild 2
+- slug: wohnkuechenausbau
+  url: "/galerie/wohnkuechenausbau/"
+  title: Wohnküche ausgebaut
+  description: Beim Ausbau der Wohnküche ging es um eine praktische und stimmige Lösung
+    für den Alltag. Alles wurde so umgesetzt, dass der Raum offen, sauber und gut
+    nutzbar bleibt.
+  category: Renovierung
+  category_slug: renovierung
+  icon: hammer
+  image_count: 2
+  image_count_label: 2 Bilder
+  cover_image: "/assets/img/galerie/wohnkuechenausbau/wohnkuechenausbau-01.jpeg"
+  cover_alt: Ausgebaute Wohnküche in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/wohnkuechenausbau/wohnkuechenausbau-01.jpeg"
+    alt: Ausgebaute Wohnküche in Rösrath Bild 1
+  - src: "/assets/img/galerie/wohnkuechenausbau/wohnkuechenausbau-02.jpeg"
+    alt: Ausgebaute Wohnküche in Rösrath Bild 2
+- slug: wohnzimmerschrank
+  url: "/galerie/wohnzimmerschrank/"
+  title: Wohnzimmerschrank eingebaut
+  description: Hier wurde ein Schrank im Wohnzimmer sauber eingebaut und passend in
+    den Raum integriert. So entsteht zusätzlicher Stauraum, ohne dass der Raum unruhig
+    wirkt.
+  category: Renovierung
+  category_slug: renovierung
+  icon: hammer
+  image_count: 1
+  image_count_label: 1 Bild
+  cover_image: "/assets/img/galerie/wohnzimmerschrank/wohnzimmerschrank-01.jpeg"
+  cover_alt: Eingebauter Wohnzimmerschrank in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/wohnzimmerschrank/wohnzimmerschrank-01.jpeg"
+    alt: Eingebauter Wohnzimmerschrank in Rösrath Bild 1
+- slug: zaunbau
+  url: "/galerie/zaunbau/"
+  title: Zaunbau am Grundstück
+  description: Bei diesem Projekt wurde ein Zaun ordentlich gesetzt und an das Grundstück
+    angepasst. Das sorgt für einen klaren Abschluss und eine saubere Gesamtwirkung.
+  category: Außenbereich
+  category_slug: aussenbereich
+  icon: hammer
+  image_count: 1
+  image_count_label: 1 Bild
+  cover_image: "/assets/img/galerie/zaunbau/zaunbau-01.jpeg"
+  cover_alt: Neu gebauter Zaun in Rösrath Bild 1
+  images:
+  - src: "/assets/img/galerie/zaunbau/zaunbau-01.jpeg"
+    alt: Neu gebauter Zaun in Rösrath Bild 1

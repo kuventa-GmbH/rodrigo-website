@@ -1,0 +1,11 @@
+---
+- slug: alle
+  label: Alle
+- slug: boeden
+  label: Böden
+- slug: badsanierung
+  label: Badsanierung
+- slug: aussenbereich
+  label: Außenbereich
+- slug: renovierung
+  label: Renovierung

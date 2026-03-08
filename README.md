@@ -49,3 +49,6 @@ title: My Post
 
 ## Customization
 Edit `_layouts/*.html` and `assets/css/site.css` to build your own design.
+
+## Galerie
+Die Anleitung zum Hinzufuegen neuer Galerieprojekte und Bilder liegt in [GALERIE.md](./GALERIE.md).

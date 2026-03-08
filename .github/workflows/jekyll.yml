@@ -27,6 +27,9 @@ jobs:
           ruby-version: "3.4"
           bundler-cache: true
 
+      - name: Generate gallery data
+        run: ruby scripts/generate_gallery_pages.rb
+
       - name: Build site
         run: bundle exec jekyll build
 

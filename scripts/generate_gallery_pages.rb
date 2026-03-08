@@ -1,9 +1,16 @@
+#!/usr/bin/env ruby
 # frozen_string_literal: true
 
-module GalleryProjects
+require "fileutils"
+require "yaml"
+
+module GalleryGenerator
   module_function
 
-  GALLERY_ROOT = "assets/img/galerie"
+  ROOT = File.expand_path("..", __dir__)
+  GALLERY_ROOT = File.join(ROOT, "assets/img/galerie")
+  DATA_DIR = File.join(ROOT, "_data")
+  PAGES_DIR = File.join(ROOT, "galerie")
 
   CATEGORY_DEFINITIONS = [
     { "slug" => "boeden", "label" => "Böden", "keywords" => %w[parkett vinyl boden fussleisten] },
@@ -63,36 +70,38 @@ module GalleryProjects
     "zaunbau" => "Neu gebauter Zaun in Rösrath"
   }.freeze
 
-  def build(site)
-    root = File.join(site.source, GALLERY_ROOT)
-    return [] unless Dir.exist?(root)
+  def call
+    projects = build_projects
+    write_yaml(File.join(DATA_DIR, "gallery_projects.yml"), projects)
+    write_yaml(File.join(DATA_DIR, "gallery_categories.yml"), categories)
+    write_pages(projects)
+  end
 
-    Dir.children(root)
+  def build_projects
+    return [] unless Dir.exist?(GALLERY_ROOT)
+
+    Dir.children(GALLERY_ROOT)
       .reject { |name| name.start_with?(".") }
-      .map { |name| File.join(root, name) }
-      .select { |path| File.directory?(path) }
-      .sort_by { |path| display_title(File.basename(path)) }
-      .map { |path| build_project(site, path) }
+      .select { |name| File.directory?(File.join(GALLERY_ROOT, name)) }
+      .sort_by { |slug| display_title(slug) }
+      .map { |slug| build_project(slug) }
       .reject { |project| project["images"].empty? }
   end
 
-  def build_project(site, absolute_path)
-    slug = File.basename(absolute_path)
-    relative_dir = "/" + absolute_path.delete_prefix(site.source).sub(%r{^/}, "")
-    category = detect_category(slug)
-
-    images = Dir.children(absolute_path)
+  def build_project(slug)
+    images = Dir.children(File.join(GALLERY_ROOT, slug))
       .reject { |name| name.start_with?(".") }
-      .select { |name| File.file?(File.join(absolute_path, name)) }
       .select { |name| name.match?(/\.(jpe?g|png|webp)$/i) }
       .sort
       .each_with_index
       .map do |filename, index|
         {
-          "src" => "#{relative_dir}/#{filename}",
+          "src" => "/assets/img/galerie/#{slug}/#{filename}",
           "alt" => "#{alt_base(slug)} Bild #{index + 1}"
         }
       end
+
+    category = detect_category(slug)
 
     {
       "slug" => slug,
@@ -110,7 +119,7 @@ module GalleryProjects
     }
   end
 
-  def categories_for(projects)
+  def categories
     [{ "slug" => "alle", "label" => "Alle" }] + CATEGORY_DEFINITIONS.map do |category|
       { "slug" => category["slug"], "label" => category["label"] }
     end
@@ -152,38 +161,37 @@ module GalleryProjects
       .gsub("ue", "ü")
       .gsub("ss", "ß")
   end
-end
 
-class GalleryProjectPage < Jekyll::PageWithoutAFile
-  def initialize(site, project)
-    @site = site
-    @base = site.source
-    @dir = File.join("galerie", project["slug"])
-    @name = "index.html"
-
-    process(@name)
-    self.content = ""
-    self.data = {
-      "layout" => "gallery-project",
-      "title" => project["title"],
-      "description" => project["description"],
-      "nav_section" => "galerie",
-      "project" => project
-    }
+  def write_yaml(path, data)
+    File.write(path, YAML.dump(data))
   end
-end
 
-class GalleryProjectPageGenerator < Jekyll::Generator
-  safe true
-  priority :low
+  def write_pages(projects)
+    FileUtils.mkdir_p(PAGES_DIR)
 
-  def generate(site)
-    projects = GalleryProjects.build(site)
-    site.data["gallery_projects"] = projects
-    site.data["gallery_categories"] = GalleryProjects.categories_for(projects)
+    generated_paths = projects.map do |project|
+      path = File.join(PAGES_DIR, "#{project["slug"]}.md")
+      File.write(path, page_content(project))
+      path
+    end
 
-    projects.each do |project|
-      site.pages << GalleryProjectPage.new(site, project)
+    Dir.glob(File.join(PAGES_DIR, "*.md")).each do |path|
+      FileUtils.rm_f(path) unless generated_paths.include?(path)
     end
   end
+
+  def page_content(project)
+    <<~PAGE
+      ---
+      layout: gallery-project
+      title: #{project["title"]}
+      description: #{project["description"]}
+      permalink: #{project["url"]}
+      nav_section: galerie
+      project_slug: #{project["slug"]}
+      ---
+    PAGE
+  end
 end
+
+GalleryGenerator.call
