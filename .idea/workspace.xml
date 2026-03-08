@@ -4,30 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34acdfc8-ca06-40a4-9da4-2de1131fc2a5" name="Changes" comment="first version off galerie">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/jekyll.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/jekyll.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/components/gallery/gallery-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/components/gallery/gallery-overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/gallery-project.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/gallery-project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_plugins/gallery_projects.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/_site/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/galerie/fassade-gemalt/fassade-gemalt-01.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/galerie/fassade-gemalt/fassade-gemalt-01.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/balkon-ausbau/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/balkon-ausbau/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/dachgeschoss-ausbau/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/dachgeschoss-ausbau/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/einfahrt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/einfahrt/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/eingang-gepflastert/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/eingang-gepflastert/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/eingangstuer-einbau/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/eingangstuer-einbau/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/fassade-gemalt/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/fassade-gemalt/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/glasdach/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/glasdach/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/hauseingangstuer-einbau/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/hauseingangstuer-einbau/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/parkett-fussleisten-tuer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/parkett-fussleisten-tuer/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/parkett-verlegen/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/parkett-verlegen/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/pflasterweg/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/pflasterweg/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/wohnkuechenausbau/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/wohnkuechenausbau/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/wohnzimmerschrank/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/wohnzimmerschrank/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/galerie/zaunbau/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/galerie/zaunbau/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="34acdfc8-ca06-40a4-9da4-2de1131fc2a5" name="Changes" comment="update galerie" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +81,7 @@
       <workItem from="1772570628932" duration="610000" />
       <workItem from="1772729340687" duration="594000" />
       <workItem from="1772783954862" duration="135000" />
-      <workItem from="1772916498223" duration="10495000" />
+      <workItem from="1772916498223" duration="10796000" />
     </task>
     <task id="LOCAL-00001" summary="first stable version">
       <option name="closed" value="true" />
@@ -170,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772965455705</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update galerie">
+      <option name="closed" value="true" />
+      <created>1772965914813</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1772965914813</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +165,7 @@
     <MESSAGE value="first stable version" />
     <MESSAGE value="update kontaktpanel" />
     <MESSAGE value="first version off galerie" />
-    <option name="LAST_COMMIT_MESSAGE" value="first version off galerie" />
+    <MESSAGE value="update galerie" />
+    <option name="LAST_COMMIT_MESSAGE" value="update galerie" />
   </component>
 </project>
