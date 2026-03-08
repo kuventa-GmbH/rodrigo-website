@@ -106,6 +106,9 @@ ul {
 .brand-logo {
   width: 227px;
   height: 40px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  flex-shrink: 0;
   object-fit: contain;
 }
 
@@ -1328,8 +1331,8 @@ textarea:focus {
   .brand {
     padding: 0;
     .brand-logo {
-      width: 175px;
-      height: 34px;
+      width: 56px;
+      height: 56px;
     }
   }
   p {
@@ -1705,7 +1708,7 @@ textarea:focus {
     max-height: 280px;
   }
   .nav-links.is-open .nav-link.is-active {
-    color: #38a0ed;
+    color: var(--text);
   }
   .blog-entry {
     grid-template-columns: 1fr;
@@ -1851,6 +1854,9 @@ a {
 .brand-logo {
   width: 60px;
   height: 60px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  flex-shrink: 0;
   object-fit: contain;
   border-radius: 18px;
   background: #fff;

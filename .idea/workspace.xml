@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34acdfc8-ca06-40a4-9da4-2de1131fc2a5" name="Changes" comment="update galerie" />
+    <list default="true" id="34acdfc8-ca06-40a4-9da4-2de1131fc2a5" name="Changes" comment="update galerie">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/site.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/site.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/site.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/site.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +88,7 @@
       <workItem from="1772570628932" duration="610000" />
       <workItem from="1772729340687" duration="594000" />
       <workItem from="1772783954862" duration="135000" />
-      <workItem from="1772916498223" duration="10796000" />
+      <workItem from="1772916498223" duration="12832000" />
     </task>
     <task id="LOCAL-00001" summary="first stable version">
       <option name="closed" value="true" />
@@ -155,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772965914813</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update galerie">
+      <option name="closed" value="true" />
+      <created>1772966337719</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1772966337719</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
