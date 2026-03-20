@@ -19,6 +19,8 @@ assets/img/galerie/terrasse-neu/
 - Erlaubte Formate: `.jpg`, `.jpeg`, `.png`, `.webp`
 - Vermeide Leerzeichen und Sonderzeichen in Dateinamen.
 - Die Reihenfolge in der Galerie ergibt sich aus dem alphabetischen Dateinamen.
+- Optional koennen Bilder innerhalb eines Projekts in Unterordnern wie `neu/` und `alt/` liegen.
+- Solche Unterordner werden in der Projektgalerie getrennt dargestellt, damit der Unterschied visuell erkennbar bleibt.
 
 Beispiel:
 
@@ -26,6 +28,15 @@ Beispiel:
 assets/img/galerie/terrasse-neu/terrasse-neu-01.jpeg
 assets/img/galerie/terrasse-neu/terrasse-neu-02.jpeg
 assets/img/galerie/terrasse-neu/terrasse-neu-03.jpeg
+```
+
+Beispiel mit Unterordnern:
+
+```text
+assets/img/galerie/bad-sanierung/neu/bad-sanierung-01.jpeg
+assets/img/galerie/bad-sanierung/neu/bad-sanierung-02.jpeg
+assets/img/galerie/bad-sanierung/alt/bad-sanierung-01.jpeg
+assets/img/galerie/bad-sanierung/alt/bad-sanierung-02.jpeg
 ```
 
 ## Lokalen Build aktualisieren

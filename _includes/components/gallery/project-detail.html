@@ -1,4 +1,5 @@
 {% assign project = include.project | default: page.project %}
+{% assign image_groups = project.image_groups | default: empty %}
 <section class="section page-hero gallery-project-hero">
   <div class="container gallery-project-hero__inner">
     <div class="gallery-project-hero__copy js-anim" data-anim="animate__fadeInLeft" data-once="true">
@@ -37,7 +38,27 @@
         <p>Per Wisch auf dem Handy oder mit den Pfeilen können Sie sich die Bilder in Ruhe ansehen. Ein Klick auf ein Bild öffnet die große Ansicht.</p>
       </div>
 
-      {% include components/carousel/project-carousel.html project=project %}
+      {% if image_groups.size > 1 %}
+        <div class="gallery-group-list">
+          {% for group in image_groups %}
+            {% unless forloop.first %}
+              <div class="gallery-group-divider" aria-hidden="true">
+                <span class="gallery-group-divider__line"></span>
+              </div>
+            {% endunless %}
+
+            <section class="gallery-group gallery-group--{{ group.slug }}">
+              <header class="gallery-group__intro">
+                <h3 class="gallery-group__title">{{ group.label }}</h3>
+              </header>
+
+              {% include components/carousel/project-carousel.html project=project images=group.images %}
+            </section>
+          {% endfor %}
+        </div>
+      {% else %}
+        {% include components/carousel/project-carousel.html project=project %}
+      {% endif %}
     </div>
 
     <aside class="gallery-detail-shell__side js-anim" data-anim="animate__fadeInUp" data-once="true" data-delay="80">

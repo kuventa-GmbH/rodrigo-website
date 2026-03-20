@@ -1,6 +1,7 @@
 {% assign project = include.project %}
+{% assign images = include.images | default: project.images %}
 <div class="project-carousel" data-carousel>
-  {% if project.image_count > 1 %}
+  {% if images.size > 1 %}
     <div class="project-carousel__controls">
       <button class="project-carousel__nav project-carousel__nav--prev" type="button" aria-label="Vorherige Bilder" data-carousel-prev>
         <span data-lucide="arrow-left" aria-hidden="true"></span>
@@ -13,7 +14,7 @@
 
   <div class="project-carousel__viewport" data-carousel-viewport>
     <div class="project-carousel__track">
-      {% for image in project.images %}
+      {% for image in images %}
         <figure class="project-carousel__slide">
           <button
             class="project-carousel__zoom"
